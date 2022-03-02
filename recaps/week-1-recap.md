@@ -97,3 +97,25 @@
 * What commands are associated with the typical Git workflow?
 * What does `git add` do?
 * What does `git commit` do?
+* What 2 types of variables are there?
+* What is the difference between the two types?
+* What is casting?
+* Is narrowing casting implicit or explicit?
+* Is widening casting implicit or explicit?
+* What arithmetic operators exist in Java? What is the % operator?
+* What is a ternary operator?
+* What is the difference between postfix and prefix (++x, x++, --x, x--)?
+* What does it mean for a logical operator to "short-circuit"?
+* Describe binary operator numeric promotion
+* What data-types does a switch statement support?
+* While v. do-while loop?
+* What is the syntax for a for loop?
+* What are some properties of an array?
+* Is it slower to access an array's elements if the array has a huge number of elements compared to a small array?
+* What are a few ways to create an array?
+* What 4 variable scopes are there?
+* What is the purpose of the static keyword?
+* If a field is static, what does that mean? How do we access a static field?
+* If a field is non-static, how do we access a non-static field?
+* What 4 access modifiers are there? What is their order from most restrictive to least?
+* What is encapsulation? Why do we use getters/setters?
