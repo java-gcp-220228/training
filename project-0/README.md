@@ -64,7 +64,7 @@ Here are some ideas:
 - Postman tests to verify API functionality
 - Run the application as a standalone JAR
 - Run the application on a docker image
-- Deploy the application to an EC2 instance on AWS
+- Deploy the application to a Google Cloud Compute instance
 - Use at least 1 stored procedure w/ Postgres
 - Additional resources and RESTful endpoints (in addition to the clients and accounts resources in the main requirements)
 - Login Functionality?
