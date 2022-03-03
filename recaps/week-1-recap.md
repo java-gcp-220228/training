@@ -111,6 +111,7 @@
 - Inheritance
     - [image](./images/inheritance.JPG)
     - [hierarchy example image](./images/inheritance-hierarchy.JPG)
+    
 
 # Questions
 
