@@ -111,7 +111,64 @@
 - Inheritance
     - [image](./images/inheritance.JPG)
     - [hierarchy example image](./images/inheritance-hierarchy.JPG)
-    
+    - Inheritance Demo
+        - [Animal parent class](https://github.com/java-gcp-220228/training/blob/main/week-1/inheritance-polymorphism/src/com/revature/model/Animal.java)
+        - [Cat child class](https://github.com/java-gcp-220228/training/blob/main/week-1/inheritance-polymorphism/src/com/revature/model/Cat.java)
+            - Inheriting numOfLegs and instance methods
+        - [Dog child class](https://github.com/java-gcp-220228/training/blob/main/week-1/inheritance-polymorphism/src/com/revature/model/Dog.java)
+            - Inheriting numOfLegs and instance methods
+        - [Calling Animal parent class constructor in Dog child class](https://github.com/java-gcp-220228/training/blob/main/week-1/inheritance-polymorphism/src/com/revature/model/Dog.java#L10)
+- Reference variable casting
+    - [notes](https://github.com/java-gcp-220228/training/blob/main/week-1/inheritance-polymorphism/src/com/revature/main/Driver.java#L22-L24)
+    - [downcasting demo](https://github.com/java-gcp-220228/training/blob/main/week-1/inheritance-polymorphism/src/com/revature/main/Driver.java#L16-L32)
+- Storing Cat and Dog objects in an Animal array
+    - [demo](https://github.com/java-gcp-220228/training/blob/main/week-1/inheritance-polymorphism/src/com/revature/main/Driver.java#L34-L54)
+        - Polymorphism in action (.makeNoise() method)
+- Polymorphism
+    - [image](./images/polymorphism.JPG)
+    - Polymorphism Demo
+        - Method overriding
+            - [overriding makeNoise() in Dog](https://github.com/java-gcp-220228/training/blob/main/week-1/inheritance-polymorphism/src/com/revature/model/Dog.java#L18-L25)
+            - [overriding makeNoise() in Cat](https://github.com/java-gcp-220228/training/blob/main/week-1/inheritance-polymorphism/src/com/revature/model/Cat.java#L16-L19)
+        - Method overloading
+            - [overloaded eat() methods](https://github.com/java-gcp-220228/training/blob/main/week-1/inheritance-polymorphism/src/com/revature/model/Animal.java#L15-L41)
+                - [var-args example](https://github.com/java-gcp-220228/training/blob/main/week-1/inheritance-polymorphism/src/com/revature/model/Animal.java#L26-L28)
+        - Polymorphism in action
+            - [calling/invoking makeNoise() (depends on actual object type being referenced)](https://github.com/java-gcp-220228/training/blob/main/week-1/inheritance-polymorphism/src/com/revature/main/Driver.java#L51-L53)
+- Object class
+    - [image](./images/object-class.JPG)
+    - [image 2](./images/object-class-2.JPG)
+    - Important methods
+        - toString()
+        - equals(...)
+        - hashCode()
+    - Overriding toString(), equals(...), and hashCode()
+        - [demo](https://github.com/java-gcp-220228/training/blob/main/week-1/object-class/src/com/revature/model/Person.java#L24-L44)
+        - [using Person object in main method](https://github.com/java-gcp-220228/training/blob/main/week-1/object-class/src/com/revature/main/Driver.java#L14-L19)
+- Java Bean
+    - [image](./images/javabean.JPG)
+- Collections 
+    - Inheritance Hierarchy
+        - [image](./images/collections-hierarchy.JPG)
+    - Types of Collections and common implementations
+        - [image](./images/collections-types-common-implementation.JPG)
+- List
+    - [image](./images/list.JPG)
+    - Custom implementation of array list
+        - [demo](https://github.com/java-gcp-220228/training/blob/main/week-1/my-custom-arraylist-implementation/src/com/revature/main/MyCustomArrayList.java#L3-L46)
+        - Utilizing Generics
+            - [<E>](https://github.com/java-gcp-220228/training/blob/main/week-1/my-custom-arraylist-implementation/src/com/revature/main/MyCustomArrayList.java#L3-L4)
+            - [Generic type for array E[]](https://github.com/java-gcp-220228/training/blob/main/week-1/my-custom-arraylist-implementation/src/com/revature/main/MyCustomArrayList.java#L7)
+        - Instantiating custom implementation to store Person objects
+            - [demo](https://github.com/java-gcp-220228/training/blob/main/week-1/my-custom-arraylist-implementation/src/com/revature/main/Driver.java#L19-L26)
+        - Instantiating custom implementation to store String objects
+            - [demo](https://github.com/java-gcp-220228/training/blob/main/week-1/my-custom-arraylist-implementation/src/com/revature/main/Driver.java#L30-L39)
+- Wrapper Class
+    - [notes](https://github.com/java-gcp-220228/training/blob/main/week-1/my-custom-arraylist-implementation/src/com/revature/main/Driver.java#L42-L59)
+    - [autoboxing demo](https://github.com/java-gcp-220228/training/blob/main/week-1/my-custom-arraylist-implementation/src/com/revature/main/Driver.java#L63-L64)
+    - [unboxing demo](https://github.com/java-gcp-220228/training/blob/main/week-1/my-custom-arraylist-implementation/src/com/revature/main/Driver.java#L66-L68)
+    - Storing Integer wrapper objects in the custom array list
+        - [demo](https://github.com/java-gcp-220228/training/blob/main/week-1/my-custom-arraylist-implementation/src/com/revature/main/Driver.java#L70-L73)
 
 # Questions
 
