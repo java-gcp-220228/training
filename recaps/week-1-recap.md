@@ -77,6 +77,41 @@
     - [getters](https://github.com/java-gcp-220228/training/blob/main/week-1/encapsulation/src/com/revature/model/Person.java#L19-L33)
     - [setters](https://github.com/java-gcp-220228/training/blob/main/week-1/encapsulation/src/com/revature/model/Person.java#L35-L59)
 
+## Day 3
+- String Demo
+    - String literals v. non-string literals
+        - [demo](https://github.com/java-gcp-220228/training/blob/main/week-1/string-stringbuilder-stringbuffer-demo/src/com/revature/main/Driver.java#L69-L88)
+        - [image](./images/strings.JPG)
+    - Using Reflection API to change a string's internal value
+        - [demo](https://github.com/java-gcp-220228/training/blob/main/week-1/string-stringbuilder-stringbuffer-demo/src/com/revature/main/Driver.java#L90-L101)
+    - Using .concat(...)
+        - [demo](https://github.com/java-gcp-220228/training/blob/main/week-1/string-stringbuilder-stringbuffer-demo/src/com/revature/main/Driver.java#L106-L116)
+    - Using .length()
+        - [demo](https://github.com/java-gcp-220228/training/blob/main/week-1/string-stringbuilder-stringbuffer-demo/src/com/revature/main/Driver.java#L121-L123)
+    - Using startsWith(...)
+        - [demo](https://github.com/java-gcp-220228/training/blob/main/week-1/string-stringbuilder-stringbuffer-demo/src/com/revature/main/Driver.java#L125-L126)
+    - Using endsWith(...)
+        - [demo](https://github.com/java-gcp-220228/training/blob/main/week-1/string-stringbuilder-stringbuffer-demo/src/com/revature/main/Driver.java#L128-L129)
+    - Using .matches(regex)
+        - [demo](https://github.com/java-gcp-220228/training/blob/main/week-1/string-stringbuilder-stringbuffer-demo/src/com/revature/main/Driver.java#L131-L132)
+    - Using .indexOf(...)
+        - [demo](https://github.com/java-gcp-220228/training/blob/main/week-1/string-stringbuilder-stringbuffer-demo/src/com/revature/main/Driver.java#L134-L135)
+    - Using .charAt(...)
+        - [demo](https://github.com/java-gcp-220228/training/blob/main/week-1/string-stringbuilder-stringbuffer-demo/src/com/revature/main/Driver.java#L137-L140)
+    - Comparing strings
+        - .equals(...) v. ==
+            - [demo](https://github.com/java-gcp-220228/training/blob/main/week-1/string-stringbuilder-stringbuffer-demo/src/com/revature/main/Driver.java#L145-L146)
+- StringBuilder and StringBuffer
+    - [image](./images/stringbuilder-stringbuffer.JPG)
+    - Reversing a string
+        - Naively using String concatenation O(n^2)
+            - [demo](https://github.com/java-gcp-220228/training/blob/main/week-1/string-stringbuilder-stringbuffer-demo/src/com/revature/main/Driver.java#L18-L43)
+        - Efficiently using StringBuilder O(n)
+            - [demo](https://github.com/java-gcp-220228/training/blob/main/week-1/string-stringbuilder-stringbuffer-demo/src/com/revature/main/Driver.java#L45-L65)
+- Inheritance
+    - [image](./images/inheritance.JPG)
+    - [hierarchy example image](./images/inheritance-hierarchy.JPG)
+
 # Questions
 
 * What does the JDK contain?
