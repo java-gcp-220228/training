@@ -1,11 +1,12 @@
 package com.revature.datastructure;
 
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 
 import java.util.NoSuchElementException;
 
 public class MyStackTest {
+
+    private MyStack<String> stack;
 
     /*
         Positive Test: We are testing to see if what actually happens is what is expected
@@ -24,6 +25,53 @@ public class MyStackTest {
             in the testing framework (such as Jupiter)
      */
 
+    /*
+        Jupiter Annotations
+        1. @Test (place onto a method that will serve as a test case)
+        2. @BeforeAll (place onto a method that will be run before any test cases run)
+        3. @BeforeEach (place onto a method that will be run before each and every
+            test case)
+        4. @AfterEach (place onto a method that will be run after each and every test case)
+        5. @AfterAll (place onto a method that will be run after all tests cases have
+            already been executed)
+     */
+
+    /*
+        Jupiter Assertions
+
+        .assertEquals(expected, actual)
+        .assertTrue(boolean)
+        .assertFalse(boolean)
+        .assertArrayEquals(arr1, arr2)
+        .assertThrows(exception, () -> { ... })
+        .assertNotEquals
+        .assertNotNull
+        .assertNull
+        .assertSame(..., ...) <- if they point to the same object (same reference)
+        .fail()
+     */
+
+//    @BeforeAll
+//    public static void someMethodBeforeAll() {
+//        System.out.println("Runs before all test cases");
+//    }
+
+    @BeforeEach
+    public void setUp() {
+        stack = new MyStack<>();
+    }
+
+//    @AfterEach
+//    public void tearDown() {
+//        System.out.println("Runs after each test case");
+//    }
+//
+//    @AfterAll
+//    public static void someMethodAfterAll() {
+//        System.out.println("Runs after all test cases have ran");
+//    }
+
+
     // Positive Test
     @Test
     public void testPushToStack_andCheckSize() {
@@ -35,7 +83,7 @@ public class MyStackTest {
         /*
             Arrange
          */
-        MyStack<String> stack = new MyStack<>();
+//        MyStack<String> stack = new MyStack<>();
 
         /*
             Act
@@ -53,7 +101,7 @@ public class MyStackTest {
     // Positive Test
     @Test
     public void testPushToStack_andPopElements() {
-        MyStack<String> stack = new MyStack<>();
+//        MyStack<String> stack = new MyStack<>();
 
         stack.push("String 1");
         stack.push("String 2");
@@ -68,12 +116,14 @@ public class MyStackTest {
     // Negative test
     @Test
     public void testPopFromEmptyStack() {
-        MyStack<String> stack = new MyStack<>();
+//        MyStack<String> stack = new MyStack<>();
 
         // IF the exception occurs, THEN the test passes
-        Assertions.assertThrows(NoSuchElementException.class, () -> {
-            stack.pop();
-        });
+        Assertions.assertThrows(NoSuchElementException.class,
+                () -> {
+                    stack.pop();
+                }
+        );
     }
 
 }

@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.revature.datastructure.MyStackTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-03-03T22:54:46" hostname="REV-LR0BSME3" time="0.033">
+<testsuite name="com.revature.datastructure.MyStackTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2022-03-04T16:21:35" hostname="REV-LR0BSME3" time="0.033">
   <properties/>
-  <testcase name="testPopFromEmptyStack()" classname="com.revature.datastructure.MyStackTest" time="0.033"/>
+  <testcase name="testPushToStack_andPopElements()" classname="com.revature.datastructure.MyStackTest" time="0.027"/>
+  <testcase name="testPopFromEmptyStack()" classname="com.revature.datastructure.MyStackTest" time="0.003"/>
+  <testcase name="testPushToStack_andCheckSize()" classname="com.revature.datastructure.MyStackTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
