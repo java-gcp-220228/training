@@ -212,3 +212,31 @@
 * If a field is non-static, how do we access a non-static field?
 * What 4 access modifiers are there? What is their order from most restrictive to least?
 * What is encapsulation? Why do we use getters/setters?
+---
+* What is the string pool? What types of strings are in the string pool?
+* Does .concat() change the value of a string object? If no, what does concat do instead?
+* What does it mean for strings to be immutable?
+* What are some examples of methods you might use from a string object?
+* If you want to compare two strings' values, how do you do so?
+* What is the difference between StringBuilder and StringBuffer?
+* Why is string concatenation slower than using StringBuilder?
+* What is inheritance?
+* What does the child class inherit from the parent class?
+* What is upcasting v. downcasting?
+* What is polymorphism?
+* What is method overloading?
+* What is method overriding?
+* What is the Object class?
+* What important methods are defined in the Object class that are normally overridden?
+* What is the purpose of toString(), equals(...), and hashCode()?
+* What is a Java Bean?
+* Describe the structure of the Collections API inheritance hierarchy?
+* What types of Collections are there (interfaces)?
+* What are some of the implementations (concrete classes) of each type?
+* What is a List?
+* What is a Set?
+* What is a Queue?
+* What is a Map?
+* Describe the difference between an ArrayList and LinkedList
+* What are wrapper classes?
+* Why do we use wrapper classes?
