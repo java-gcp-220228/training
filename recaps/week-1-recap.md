@@ -170,6 +170,10 @@
     - Storing Integer wrapper objects in the custom array list
         - [demo](https://github.com/java-gcp-220228/training/blob/main/week-1/my-custom-arraylist-implementation/src/com/revature/main/Driver.java#L70-L73)
 
+## Day 4
+- Abstraction
+    - [image](./images/abstraction.JPG)
+
 # Questions
 
 * What does the JDK contain?
