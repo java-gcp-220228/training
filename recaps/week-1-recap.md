@@ -173,6 +173,58 @@
 ## Day 4
 - Abstraction
     - [image](./images/abstraction.JPG)
+    - [abstraction inheritance hierarchy example](./images/abstraction-inheritance.JPG)
+    - Abstract class
+        - [image](./images/abstract-class.JPG)
+        - Demo of Shape abstract class
+            - [abstract class Shape](https://github.com/java-gcp-220228/training/blob/main/week-1/abstraction/src/com/revature/model/example1/Shape.java)
+            - [Circle extends Shape](https://github.com/java-gcp-220228/training/blob/main/week-1/abstraction/src/com/revature/model/example1/Circle.java)
+            - [Rectangle extends Shape](https://github.com/java-gcp-220228/training/blob/main/week-1/abstraction/src/com/revature/model/example1/Rectangle.java)
+            - [Triangle extends Shape](https://github.com/java-gcp-220228/training/blob/main/week-1/abstraction/src/com/revature/model/example1/Triangle.java)
+    - Interface
+        - [image](./images/interface.JPG)
+        - Demo of MyList interface
+            - [interface MyList<E>](https://github.com/java-gcp-220228/training/blob/main/week-1/abstraction/src/com/revature/model/example2/MyList.java)
+            - [MyArrayList implementation of MyList](https://github.com/java-gcp-220228/training/blob/main/week-1/abstraction/src/com/revature/model/example2/MyArrayList.java#L18-L48)
+            - [LinkedList implementation of MyList](https://github.com/java-gcp-220228/training/blob/main/week-1/abstraction/src/com/revature/model/example2/MyLinkedList.java#L14-L49)
+- Collections API
+    - Queue
+        - FIFO
+        - Why a LinkedList is good for queues
+            - [image](./images/queue-linkedlist-arraylist.JPG)
+        - [demo](https://github.com/java-gcp-220228/training/blob/main/week-1/collections/src/com/revature/main/Driver.java#L83-L104)
+    - Set
+        - [image](./images/set.JPG)
+        - [demo](https://github.com/java-gcp-220228/training/blob/main/week-1/collections/src/com/revature/main/Driver.java#L62-L81)
+    - Map
+        - [image](./images/map.JPG)
+        - [demo](https://github.com/java-gcp-220228/training/blob/main/week-1/collections/src/com/revature/main/Driver.java#L27-L60)
+    - List
+        - [demo](https://github.com/java-gcp-220228/training/blob/main/week-1/collections/src/com/revature/main/Driver.java#L106-L146)
+- Comparable and Comparator
+    - [image](./images/comparable-comparator.JPG)
+    - [implementing compareTo(...) from Comparable interface](https://github.com/java-gcp-220228/training/blob/main/week-1/comparable-comparator/src/com/revature/model/Person.java#L66-L84)
+    - [class FirstNameComparator implements Comparator](https://github.com/java-gcp-220228/training/blob/main/week-1/comparable-comparator/src/com/revature/main/FirstNameComparator.java)
+    - [class LastNameComparator implements Comparator](https://github.com/java-gcp-220228/training/blob/main/week-1/comparable-comparator/src/com/revature/main/LastNameComparator.java#L9-L17)
+- Exceptions
+    - [image](./images/exceptions.JPG)
+    - [image 2](./images/exceptions2.JPG)
+- Stack trace
+    - [image](./images/stack-trace.JPG)
+- Gradle
+    - Gradle project
+        - [demo](https://github.com/java-gcp-220228/training/tree/main/week-1/junit-demo)
+    - build.gradle file
+        - [demo](https://github.com/java-gcp-220228/training/blob/main/week-1/junit-demo/build.gradle)
+        - [dependencies inside build.gradle](https://github.com/java-gcp-220228/training/blob/main/week-1/junit-demo/build.gradle#L12-L15)
+- Custom Stack implementation
+    - [demo](https://github.com/java-gcp-220228/training/blob/main/week-1/junit-demo/src/main/java/com/revature/datastructure/MyStack.java#L5-L52)
+- Testing using JUnit
+    - [positive v. negative tests](https://github.com/java-gcp-220228/training/blob/main/week-1/junit-demo/src/test/java/com/revature/datastructure/MyStackTest.java#L11-L18)
+    - [AAA pattern](https://github.com/java-gcp-220228/training/blob/main/week-1/junit-demo/src/test/java/com/revature/datastructure/MyStackTest.java#L20-L24)
+    - [test case #1 (positive)](https://github.com/java-gcp-220228/training/blob/main/week-1/junit-demo/src/test/java/com/revature/datastructure/MyStackTest.java#L27-L51)
+    - [test case #2 (positive)](https://github.com/java-gcp-220228/training/blob/main/week-1/junit-demo/src/test/java/com/revature/datastructure/MyStackTest.java#L53-L66)
+    - [test case #3 (negative)](https://github.com/java-gcp-220228/training/blob/main/week-1/junit-demo/src/test/java/com/revature/datastructure/MyStackTest.java#L68-L77)
 
 # Questions
 
