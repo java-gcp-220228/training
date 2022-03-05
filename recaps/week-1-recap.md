@@ -357,3 +357,23 @@
 * What is JUnit 5 / Jupiter?
 * What is the difference between a positive and negative test?
 * What is the AAA pattern for setting up tests?
+---
+* What are the 5 annotations commonly used when writing tests with Jupiter?
+* What are some examples of assertions used when writing tests with Jupiter?
+* What is the difference between a unit test, integration test, and end-to-end test?
+* Describe the n-tier architecture and the 3 layers
+* What is test driven development?
+* What is the singleton design pattern? How do you create it?
+* What is the factory design pattern? How do you create it?
+* What are functional interfaces?
+* What are lambda expressions?
+* What is SQL?
+* What are the multiplicity relationships we can have?
+* What commands are found in the DDL sublanguage?
+* What commands are found in the DML sublanguage?
+* What command(s) are found in the DQL sublanguage?
+* What commands are found in the DCL sublanguage?
+* What commands are found in the TCL sublanguage?
+* What is the purpose of a primary key and foreign key?
+* What is the purpose of Javalin?
+* What is the purpose of JDBC?
