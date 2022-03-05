@@ -239,12 +239,28 @@
     - [image](./images/n-tier-architecture.JPG)
 - Test Driven Development, Red/Green Testing
     - [image](./images/tdd-red-green.JPG)
+- Design Patterns
+    - Singleton design pattern
+        - [demo](https://github.com/java-gcp-220228/training/blob/main/week-1/singleton/src/com/revature/main/MySingleton.java)
+    - Factory design pattern
+        - [demo](https://github.com/java-gcp-220228/training/blob/main/week-1/factory/src/com/revature/main/ShapeFactory.java)
+- Functional interface
+    - [MyFunctionalInterface demo](https://github.com/java-gcp-220228/training/blob/main/week-1/functional-interfaces-and-lambdas/src/com/revature/main/MyFunctionalInterface.java#L3-L12)
+    - [MyPredicate demo](https://github.com/java-gcp-220228/training/blob/main/week-1/functional-interfaces-and-lambdas/src/com/revature/main/MyPredicate.java)
+    - [Creating a lambda expression from MyFunctionalInterface](https://github.com/java-gcp-220228/training/blob/main/week-1/functional-interfaces-and-lambdas/src/com/revature/main/Driver.java#L34-L36)
+    - [Creating a lambda expression from MyPredicate](https://github.com/java-gcp-220228/training/blob/main/week-1/functional-interfaces-and-lambdas/src/com/revature/main/Driver.java#L45-L47)
+    - [Using Java's built-in Consumer functional interface for lambdas](https://github.com/java-gcp-220228/training/blob/main/week-1/functional-interfaces-and-lambdas/src/com/revature/main/Driver.java#L61-L68)
+    - [Using Java's built-in BiConsumer functional interface for lambdas](https://github.com/java-gcp-220228/training/blob/main/week-1/functional-interfaces-and-lambdas/src/com/revature/main/Driver.java#L72-L75)
+    - [Using Java's built-in BiFunction functional interface for lambdas](https://github.com/java-gcp-220228/training/blob/main/week-1/functional-interfaces-and-lambdas/src/com/revature/main/Driver.java#L79-L81)
+    - [Using Java's built-in Comparator functional interface for lambdas](https://github.com/java-gcp-220228/training/blob/main/week-1/functional-interfaces-and-lambdas/src/com/revature/main/Driver.java#L85-L87)
 - SQL
     - [image](./images/sql.JPG)
     - Sublanguages
         - [image](./images/sql-sublanguages.JPG)
     - Multiplicity
         - [image](./images/multiplicity.JPG)
+- SQL Demo
+    - [script](https://github.com/java-gcp-220228/training/blob/main/week-1/sql-demo-1-script.sql)
 
 # Questions
 
