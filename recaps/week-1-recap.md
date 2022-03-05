@@ -226,6 +226,26 @@
     - [test case #2 (positive)](https://github.com/java-gcp-220228/training/blob/main/week-1/junit-demo/src/test/java/com/revature/datastructure/MyStackTest.java#L53-L66)
     - [test case #3 (negative)](https://github.com/java-gcp-220228/training/blob/main/week-1/junit-demo/src/test/java/com/revature/datastructure/MyStackTest.java#L68-L77)
 
+## Day 5
+- Gradle (continued)
+    - [image](./images/gradle.JPG)
+- Jupiter (JUnit 5) Annotations
+    - [image](./images/jupiter-annotations.JPG)
+- Jupiter (JUnit 5) Assertions
+    - [image](./images/jupiter-assertions.JPG)
+- Testing Pyramid
+    - [image](./images/testing-pyramid.JPG)
+- N-Tier Architecture
+    - [image](./images/n-tier-architecture.JPG)
+- Test Driven Development, Red/Green Testing
+    - [image](./images/tdd-red-green.JPG)
+- SQL
+    - [image](./images/sql.JPG)
+    - Sublanguages
+        - [image](./images/sql-sublanguages.JPG)
+    - Multiplicity
+        - [image](./images/multiplicity.JPG)
+
 # Questions
 
 * What does the JDK contain?
@@ -300,4 +320,24 @@
 * What is abstraction?
 * How many interfaces can a class inherit? What keyword do you use to inherit interfaces?
 * How many classes (whether concrete or abstract) can a class inherit? What keyword do you use to inherit a class (concrete or abstract)?
-* 
+* What is an interface? How is it different from an abstract class?
+* Variables declared in an interface have what modifiers associated with them?
+* What is the purpose of the default keyword in an interface? (do some research on this)
+* What 4 types of collections are there in the Collections API?
+* What concrete classes do we commonly utilize for List?
+* What concrete classes do we commonly utilize for Sets?
+* What concrete class do we commonly utilize for Queues?
+* What concrete class do we commonly use for Maps?
+* What is the purpose of Comparable? What about Comparator?
+* When you implement the compareTo(...) abstract method from Comparable, what does a negative value, 0, or positive value mean?
+* Describe the Throwable hierarchy
+* What is an Exception v. an Error?
+* What 2 types of exceptions are there?
+* What is the difference between the two types of exceptions?
+* What is a stack trace? How do you read a stack trace?
+* What is Gradle?
+* What important file do you use with Gradle?
+* What is a Stack?
+* What is JUnit 5 / Jupiter?
+* What is the difference between a positive and negative test?
+* What is the AAA pattern for setting up tests?
