@@ -296,3 +296,8 @@
 * Describe the difference between an ArrayList and LinkedList
 * What are wrapper classes?
 * Why do we use wrapper classes?
+---
+* What is abstraction?
+* How many interfaces can a class inherit? What keyword do you use to inherit interfaces?
+* How many classes (whether concrete or abstract) can a class inherit? What keyword do you use to inherit a class (concrete or abstract)?
+* 
