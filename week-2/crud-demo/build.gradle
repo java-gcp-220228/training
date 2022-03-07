@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+}
+
+group 'com.revature'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.2'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.2'
+    // TODO 1: include the postgres driver dependency in build.gradle
+    implementation 'org.postgresql:postgresql:42.3.3'
+}
+
+test {
+    useJUnitPlatform()
+}
