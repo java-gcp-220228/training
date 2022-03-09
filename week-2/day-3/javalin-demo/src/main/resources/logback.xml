@@ -1,0 +1,40 @@
+<!--
+    Logback is a logging framework that allows us to create log messages that can then be appended to various locations
+    that we specify
+
+    For example, we can have log messages displayed in the console, appended to a file, or even sent to a database
+
+    There are 5 different logging levels (in order of importance, least to most):
+        1. TRACE
+        2. DEBUG
+        3. INFO
+        4. WARN
+        5. ERROR
+
+    We will configure 2 different appenders that will "append" the log messages to certain locations
+        1. ConsoleAppender
+        2. FileAppender
+ -->
+
+<configuration>
+    <appender name="myConsoleAppender" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{dd MM yyyy - HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="myFileAppender" class="ch.qos.logback.core.FileAppender">
+        <file>mylogfile.log</file>
+        <append>true</append>
+        <encoder>
+            <pattern>%d{dd MM yyyy - HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- Configure the logger -->
+    <root level="INFO"> <!-- We only want INFO level or higher messages to be printed out -->
+        <!-- Configure what appenders to use -->
+        <appender-ref ref="myConsoleAppender" />
+        <appender-ref ref="myFileAppender" />
+    </root>
+</configuration>
