@@ -46,8 +46,3 @@ FROM students;
 SELECT *
 FROM grades;
 
-UPDATE students 
-SET first_name = 'Christie',
-	last_name = 'Tran'
-	age = 30
-WHERE id = 3;
