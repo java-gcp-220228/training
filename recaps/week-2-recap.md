@@ -15,14 +15,57 @@
 - Steps to use JDBC
     - [image](./images/steps-to-use-jdbc.JPG)
 - SQL Script (for CRUD JDBC Demo)
-    - [student-grades.sql](https://github.com/java-gcp-220228/training/blob/main/week-2/student-grades.sql)
+    - [student-grades.sql](https://github.com/java-gcp-220228/training/blob/main/week-2/day-1/student-grades.sql)
 - CRUD JDBC Demo
     - INSERT (C)
-        - [addStudent(...)](https://github.com/java-gcp-220228/training/blob/main/week-2/crud-demo/src/main/java/com/revature/dao/StudentDao.java#L20-L38)
+        - [addStudent(...)](https://github.com/java-gcp-220228/training/blob/main/week-2/day-1/crud-demo/src/main/java/com/revature/dao/StudentDao.java#L20-L38)
     - SELECT (R)
-        - [getStudentById(...)](https://github.com/java-gcp-220228/training/blob/main/week-2/crud-demo/src/main/java/com/revature/dao/StudentDao.java#L41-L68)
-        - [getAllStudents()](https://github.com/java-gcp-220228/training/blob/main/week-2/crud-demo/src/main/java/com/revature/dao/StudentDao.java#L70-L91)
+        - [getStudentById(...)](https://github.com/java-gcp-220228/training/blob/main/week-2/day-1/crud-demo/src/main/java/com/revature/dao/StudentDao.java#L41-L68)
+        - [getAllStudents()](https://github.com/java-gcp-220228/training/blob/main/week-2/day-1/crud-demo/src/main/java/com/revature/dao/StudentDao.java#L70-L91)
     - UPDATE (U)
-        - [updateStudent(...)](https://github.com/java-gcp-220228/training/blob/main/week-2/crud-demo/src/main/java/com/revature/dao/StudentDao.java#L94-L113)
+        - [updateStudent(...)](https://github.com/java-gcp-220228/training/blob/main/week-2/day-1/crud-demo/src/main/java/com/revature/dao/StudentDao.java#L94-L113)
     - DELETE (D)
-        - [deleteStudentById(...)](https://github.com/java-gcp-220228/training/blob/main/week-2/crud-demo/src/main/java/com/revature/dao/StudentDao.java#L117-L133)
+        - [deleteStudentById(...)](https://github.com/java-gcp-220228/training/blob/main/week-2/day-1/crud-demo/src/main/java/com/revature/dao/StudentDao.java#L117-L133)
+
+## Day 2
+- RESTful naming conventions
+    - [image 1](./images/restful-naming-conventions-1.JPG)
+    - [image 2 (continued)](./images/restful-naming-conventions-2.JPG)
+    - [image 3 (continued)](./images/restful-naming-conventions-3.JPG)
+- n-tier architecture
+    - [3 tier](./images/3-tier-architecture.JPG)
+- Unit testing definition
+    - [image](./images/unit-testing.JPG)
+- Javalin demo for day-2
+    - [code overview](https://github.com/java-gcp-220228/training/tree/main/week-2/day-2/javalin-demo/src/main/java/com/revature)
+        - [main method and helper method for mapping controllers](https://github.com/java-gcp-220228/training/blob/main/week-2/day-2/javalin-demo/src/main/java/com/revature/main/Driver.java#L11-L23)
+        - [StudentController](https://github.com/java-gcp-220228/training/blob/main/week-2/day-2/javalin-demo/src/main/java/com/revature/controller/StudentController.java#L11-L40)
+        - [StudentService](https://github.com/java-gcp-220228/training/blob/main/week-2/day-2/javalin-demo/src/main/java/com/revature/service/StudentService.java#L10-L45)
+        - [StudentDao](https://github.com/java-gcp-220228/training/blob/main/week-2/day-2/javalin-demo/src/main/java/com/revature/dao/StudentDao.java)
+        - [ExceptionController](https://github.com/java-gcp-220228/training/blob/main/week-2/day-2/javalin-demo/src/main/java/com/revature/controller/ExceptionController.java#L11-L29)
+- Unit testing the service layer of the Student demo for Javalin
+    - [StudentServiceTest](https://github.com/java-gcp-220228/training/blob/main/week-2/day-2/javalin-demo/src/test/java/com/revature/service/StudentServiceTest.java)
+
+## Day 3
+- Multi-threading
+    - [image](./images/multi-threading.JPG)
+    - [2 ways to create and run a thread](https://github.com/java-gcp-220228/training/blob/main/week-2/day-3/multi-threading-intro/src/com/revature/main/Driver.java#L7-L10)
+        - Extending the Thread class
+            - [demo](https://github.com/java-gcp-220228/training/blob/main/week-2/day-3/multi-threading-intro/src/com/revature/main/Driver.java#L12-L14)
+            - [class MyTask extends Thread](https://github.com/java-gcp-220228/training/blob/main/week-2/day-3/multi-threading-intro/src/com/revature/main/MyTask.java#L3-L14)
+        - Creating a Runnable
+            - [demo](https://github.com/java-gcp-220228/training/blob/main/week-2/day-3/multi-threading-intro/src/com/revature/main/Driver.java#L16-L19)
+            - [class MyRunnable implements Runnable](https://github.com/java-gcp-220228/training/blob/main/week-2/day-3/multi-threading-intro/src/com/revature/main/MyRunnable.java#L3-L15)
+            - [using a lambda for a Runnable](https://github.com/java-gcp-220228/training/blob/main/week-2/day-3/multi-threading-intro/src/com/revature/main/Driver.java#L21-L27)
+    - Fibonacci Number demo
+        - [fibonacci recursion illustration](./images/fibonacci-recursion.JPG)
+        - [demo](https://github.com/java-gcp-220228/training/blob/main/week-2/day-3/fibonacci-number-multithreading/src/com/revature/main/Driver.java#L7-L36)
+        - [slow fibonacci algorithm (recursion) O(2^n)](https://github.com/java-gcp-220228/training/blob/main/week-2/day-3/fibonacci-number-multithreading/src/com/revature/main/NumberUtility.java#L7-L14)
+        - [fast fibonacci algorithm (recursion with memoization) O(n)](https://github.com/java-gcp-220228/training/blob/main/week-2/day-3/fibonacci-number-multithreading/src/com/revature/main/NumberUtility.java#L16-L31)
+    - Synchronization demo
+        - [race condition diagram](./images/race-condition.JPG)
+        - [Using a lock and synchronization block](https://github.com/java-gcp-220228/training/blob/main/week-2/day-3/synchronization-demo/src/com/revature/main/Counter.java#L7-L32)
+- Javalin Demo
+    - Adding addStudent and editStudent functionality
+        - [StudentController](https://github.com/java-gcp-220228/training/blob/main/week-2/day-3/javalin-demo/src/main/java/com/revature/controller/StudentController.java#L35-L51)
+        - [StudentService](https://github.com/java-gcp-220228/training/blob/main/week-2/day-3/javalin-demo/src/main/java/com/revature/service/StudentService.java#L50-L95)
