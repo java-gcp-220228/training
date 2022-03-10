@@ -71,6 +71,10 @@
     - Synchronization demo
         - [race condition diagram](./images/race-condition.JPG)
         - [Using a lock and synchronization block](https://github.com/java-gcp-220228/training/blob/main/week-2/day-3/synchronization-demo/src/com/revature/main/Counter.java#L7-L32)
+- OWASP Top 10
+    - [Injection](https://owasp.org/www-project-top-ten/2017/A1_2017-Injection)
+    - [Insufficient Logging and Monitoring](https://owasp.org/www-project-top-ten/2017/A10_2017-Insufficient_Logging%2526Monitoring)
+    - [image](./images/owasp-sql-injection-insufficient-logging.JPG)
 - Javalin Demo
     - Adding addStudent and editStudent functionality
         - [StudentController](https://github.com/java-gcp-220228/training/blob/main/week-2/day-3/javalin-demo/src/main/java/com/revature/controller/StudentController.java#L35-L51)
