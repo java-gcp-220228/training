@@ -1,6 +1,12 @@
 # Week 2 Recap
 
 ## Day 1
+- Intro to SQL (From Friday, Week-1)
+    - [image](./images/sql.JPG)
+    - Sublanguages
+        - [image](./images/sql-sublanguages.JPG)
+    - Multiplicity
+        - [image](./images/multiplicity.JPG)
 - SQL Constraints
     - [image](./images/sql-constraints.JPG)
 - Referential Integrity
