@@ -79,3 +79,43 @@
     - Adding addStudent and editStudent functionality
         - [StudentController](https://github.com/java-gcp-220228/training/blob/main/week-2/day-3/javalin-demo/src/main/java/com/revature/controller/StudentController.java#L35-L51)
         - [StudentService](https://github.com/java-gcp-220228/training/blob/main/week-2/day-3/javalin-demo/src/main/java/com/revature/service/StudentService.java#L50-L95)
+
+## Day 4
+
+- SQL Script for the day
+    - [sql script](https://github.com/java-gcp-220228/training/blob/main/week-2/day-4/dql-and-normalization-demo-script.sql)
+- DQL Clauses
+    - [image](./images/dql-clauses.JPG)
+    - SELECT
+    - FROM
+    - JOIN
+    - WHERE
+    - GROUP BY
+    - HAVING
+    - ORDER BY
+    - LIMIT
+- GROUP BY
+    - [image diagram of GROUP BY](./images/group-by.JPG)
+- Functions
+    - Scalar Functions
+    - Aggregate Functions
+    - [image](./images/functions.JPG)
+- Database Normalization
+    - [image](./images/normalization.JPG)
+    - 0NF (Not really a normal form)
+        - [image](./images/0nf.JPG)
+    - 1st NF
+        - [image](./images/1nf.JPG)
+    - 2nd NF
+        - [image](./images/2nf.JPG)
+    - 3rd NF
+        - [image](./images/3nf.JPG)
+    - Summary
+        - [image](./images/nf-summary.JPG)
+- Schema
+    - [image](./images/schema.JPG)
+    - Entity Relationship Diagram (ERD)
+        - [example #1](./images/erd-1.JPG)
+        - [example #2](./images/erd-2.JPG)
+- Unit tests for addStudent()
+    - [demo](https://github.com/java-gcp-220228/training/blob/main/week-2/day-4/javalin-demo/src/test/java/com/revature/service/StudentServiceTest.java#L121-L201)
