@@ -71,6 +71,12 @@
             margin: 10px;
         }
 
+        #positioning-demo-container {
+            background: yellow;
+            position: relative;
+            z-index: -100;
+        }
+
         #A {
             background: green;
             z-index: -1;
@@ -81,16 +87,16 @@
         #B {
             background: red;
             position: relative;
-            bottom: 75px; /* Move up from the bottom 50px */
+            bottom: 75px; /* Move up from the bottom 75px */
             z-index: -2;
             width: 75%
         }
 
         #C {
             background: blue;
-            position: fixed;
-            left: 50px;
-            bottom: 150px;
+            position: absolute;
+            right: 0px;
+            bottom: 500px;
             z-index: 1;
             width: 50%
         }
@@ -143,8 +149,11 @@
     <span class="resizing-demo-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati voluptate est porro amet exercitationem deserunt sint quia soluta ad saepe expedita, unde, reiciendis nisi! Similique ducimus voluptatibus debitis pariatur labore!</span>
     <span class="resizing-demo-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati voluptate est porro amet exercitationem deserunt sint quia soluta ad saepe expedita, unde, reiciendis nisi! Similique ducimus voluptatibus debitis pariatur labore!</span>
 
-    <div id="A" class="box">A</div>
-    <div id="B" class="box">B</div>
-    <div id="C" class="box">C</div>
+    <div id="positioning-demo-container">
+        <div id="A" class="box">A</div>
+        <div id="B" class="box">B</div>
+        <div id="C" class="box">C</div>
+    </div>
+    
 </body>
 </html>
