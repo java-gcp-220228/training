@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Internal styling -->
+    <style>
+        /* tag name selector
+        It will select all p tags */
+        p {
+            color: red;
+        }
+
+        /* class selector */
+        .purple-text {
+            color: purple;
+        }
+
+        .cyan-text {
+            color: cyan;
+        }
+
+        /* id selector */
+        #about-me {
+            border: 5px solid green;
+            padding: 50px 15px 50px 5px; /* Clock-wise specification of top, right, bottom, left*/
+            margin: 50px 30px 20px 0px;
+            /* width: 75%;
+            height: 100px; */
+            text-align: center;
+            position: sticky;
+            top: 0;
+        }
+
+        /* descendant selector (compound selector) = combination of selectors */
+        /* Select all p tags that are descendants of the tag with an id of page-bottom */
+        /* descendant = child, or grand-child, or great-grand-child, etc. */
+        #page-bottom p {
+            color: orangered;
+        }
+
+        /* Direct child selector */
+        #page-bottom > p {
+            color: deepskyblue;
+        }
+
+        .resizing-demo {
+            background: green;
+            border: 10px solid black;
+            padding: 20px;
+            width: 200px;
+            height: 250px;
+        }
+
+        .resizing-demo-2 {
+            background: green;
+            border: 10px solid black;
+            padding: 20px;
+            width: 100px;
+            display: inline-block;
+            margin-top: 100px;
+        }
+
+        .box {
+            padding: 100px;
+            text-align: center;
+            border: 5px solid black;
+            margin: 10px;
+        }
+
+        #A {
+            background: green;
+            z-index: -1;
+            position: relative;
+            width: 100%;
+        }
+
+        #B {
+            background: red;
+            position: relative;
+            bottom: 75px; /* Move up from the bottom 50px */
+            z-index: -2;
+            width: 75%
+        }
+
+        #C {
+            background: blue;
+            position: fixed;
+            left: 50px;
+            bottom: 150px;
+            z-index: 1;
+            width: 50%
+        }
+    </style>
+
+    <!-- External styling -->
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+    <!-- 3 different ways of including styling onto a webpage
+        1. inline styling (takes precedence over internal and external styling)
+        2. internal styling
+        3. external styling 
+    -->
+
+    <!-- class and id attributes 
+    Every element can have a class and/or id attribute 
+        1. class: used to classify an element into a particular group
+            - multiple elements can belong to a particular class (classification)
+        2. id: used to uniquely identify a particular tag
+            - only 1 element per id is the convention
+    -->
+
+    <!-- inline -->
+    <p style="color: blue; border: 2px solid black;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas quia odit obcaecati temporibus et, hic architecto neque placeat delectus quae.</p>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam aut, esse sapiente sint ipsam laborum deserunt rerum placeat quidem nisi!</p>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid, ipsa. Sequi cumque illum, ipsa praesentium consequatur magnam deleniti saepe perspiciatis.</p>
+
+    <p class="purple-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim et odio delectus, illum incidunt ullam sit pariatur quidem! Vitae, tempora.</p>
+
+    <p class="purple-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit iusto dicta incidunt temporibus itaque autem ex possimus labore architecto repellat!</p>
+
+    <p class="cyan-text" id="about-me">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis repellat et tempore possimus. Nulla incidunt obcaecati vel unde adipisci blanditiis?</p>
+
+    
+    <div id="page-bottom">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, ab!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, similique?</p>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus, eius.</p>
+        </div>
+    </div>
+
+    <div class="resizing-demo">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore laudantium laborum veritatis nihil earum distinctio quam sed quis praesentium est officia, ipsum ratione reiciendis dolor eius provident minima voluptas, quaerat odio tenetur architecto. Laborum temporibus eum nostrum perferendis fuga, nulla blanditiis autem. Autem iste aliquid dolor temporibus assumenda. Nulla, expedita.
+    </div>
+
+    <span class="resizing-demo-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati voluptate est porro amet exercitationem deserunt sint quia soluta ad saepe expedita, unde, reiciendis nisi! Similique ducimus voluptatibus debitis pariatur labore!</span>
+    <span class="resizing-demo-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati voluptate est porro amet exercitationem deserunt sint quia soluta ad saepe expedita, unde, reiciendis nisi! Similique ducimus voluptatibus debitis pariatur labore!</span>
+
+    <div id="A" class="box">A</div>
+    <div id="B" class="box">B</div>
+    <div id="C" class="box">C</div>
+</body>
+</html>

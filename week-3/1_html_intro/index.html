@@ -1,0 +1,55 @@
+<!DOCTYPE html> <!-- DOCTYPE is a tag that informs the browser what version
+of HTML is being used. "html" basically means HTML5 -->
+<html>
+    <head>
+        <title>Intro to HTML</title> <!-- The title shows up in the "tab" title -->
+    </head> <!-- The head tag provides metadata tags inside of it for various different
+     purposes-->
+    <body> <!-- What is actually visible on the page goes into the body tag -->
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6>
+        
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, similique necessitatibus assumenda cum mollitia suscipit consequuntur quisquam. Officiis, quaerat commodi tempore quam, nulla laboriosam placeat, expedita sequi sed consequatur perspiciatis eligendi error! Dolores, quia consequatur nobis beatae laboriosam magnam quo ratione, aperiam molestiae fugit aspernatur laudantium eos eius porro nostrum nisi. Nihil quo molestias quas minus voluptas voluptatem esse obcaecati cum consectetur excepturi? Possimus, nam voluptate sit voluptatem laboriosam laudantium incidunt nostrum neque earum ratione illo architecto aut dolorum! Ex debitis expedita architecto? Et velit mollitia sit quaerat recusandae eos porro ea? A quibusdam omnis magni? Qui quisquam quos consequuntur?</p> <!-- Paragraph -->
+
+        <!-- For making a series of text bold, <strong> is nowaday used instead of <b>
+            and similarly, <em> is used for italics instead of <i>
+            That's because the purpose of HTML is to provide the basic structure for a page, while CSS takes care of how the page actually looks. So, b and i are a little too specific in terms of styling -->
+        <p>Lorem, <b>ipsum</b> <strong>dolor</strong> <i>sit</i> <em>amet</em> consectetur adipisicing elit. Asperiores, dignissimos.</p>
+        
+        <!-- img is a self-closing tag 
+        img is inline -->
+        <div>
+            <img src="https://cdn.vox-cdn.com/thumbor/_AobZZDt_RVStktVR7mUZpBkovc=/0x0:640x427/1200x800/filters:focal(0x0:640x427)/cdn.vox-cdn.com/assets/1087137/java_logo_640.jpg" alt="Java Logo" width="200px">
+        </div>
+
+        <!-- Section is a semantic element
+        Semantic elements tell you about what the content is supposed to be -->
+        <!-- Examples of semantic elements: <nav>, <header>, <footer>, <section>,
+            <aside>, <article>, etc. -->
+        <!-- General non-semantic elements: <div> (block), <span> (inline)-->
+        <section> <!-- section behaves pretty much like a div (it's also a block element) -->
+            <img src="./javascript.png" alt="JavaScript Logo" width="200px">
+        </section>
+
+        <img src="https://cdn.vox-cdn.com/thumbor/_AobZZDt_RVStktVR7mUZpBkovc=/0x0:640x427/1200x800/filters:focal(0x0:640x427)/cdn.vox-cdn.com/assets/1087137/java_logo_640.jpg" alt="Java Logo" width="200px">
+        <br>
+        <img src="./javascript.png" alt="JavaScript Logo" width="200px">
+        
+
+        <div> <!-- Div is a block element -->
+            <p>Lorem ipsum dolor sit amet.</p> <!-- p is a block element-->
+            <p>Lorem ipsum dolor sit amet.</p>
+
+            <span>Lorem ipsum dolor sit amet.</span> <!-- span is an inline element-->
+            <span>Lorem ipsum dolor sit amet.</span>
+        </div>
+
+        <!-- hyperlinks (a tag) (anchor tag) -->
+        <a href="http://google.com">Go to Google</a>
+        <a href="./another_page.html">Another Page</a>
+    </body>
+</html>
