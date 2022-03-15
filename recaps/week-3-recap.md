@@ -80,3 +80,25 @@
         - [demo](https://github.com/java-gcp-220228/training/blob/main/week-3/4_javascript_scopes_and_functions/index.js#L215-L244)
 
 # Questions
+* What is HTML?
+* When you create an HTML file, what are some of the important boilerplate tags?
+* What are some elements you may use on a webpage?
+* What are semantic v. non-semantic elements?
+* What is the difference between a div and a span element?
+* What is a block v. inline element?
+* What are 3 ways of including CSS on a webpage?
+* What is the difference between a class and id in HTML?
+* Describe the difference between HTML, CSS, and JavaScript
+* How do you include a .js file to an HTML webpage?
+* What are the 3 ways of declaring variables? How are they each different from each other?
+* What are the datatypes in JavaScript?
+* What is hoisting?
+* Describe an object in JavaScript?
+* How do you create an object in JS?
+* What are the Falsy values in JS?
+* What variable scopes exist in JS?
+* Which variable scope was added in JS? What variable declarations support this scope? Which one does not?
+* What are 3 ways of declaring functions in JS?
+* What are closures?
+* How does an arrow function get the meaning of the `this` differently than a named or anonymous function?
+* What is call, apply, and bind used for?
