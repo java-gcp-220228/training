@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    column-gap: 20px;
+}
+
+.item.container {
+    align-items: center; /* Align along the minor axis */
+    justify-content: center; /* Align along the main axis */
+}
+
+.item {
+    flex-grow: 1;
+    height: 300px;
+    background-color: blue;
+    color: white;
+    text-align: center;
+}
+
+#first {
+    flex-grow: 2;
+}
