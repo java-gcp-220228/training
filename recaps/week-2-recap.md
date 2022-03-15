@@ -32,6 +32,7 @@
         - [updateStudent(...)](https://github.com/java-gcp-220228/training/blob/main/week-2/day-1/crud-demo/src/main/java/com/revature/dao/StudentDao.java#L94-L113)
     - DELETE (D)
         - [deleteStudentById(...)](https://github.com/java-gcp-220228/training/blob/main/week-2/day-1/crud-demo/src/main/java/com/revature/dao/StudentDao.java#L117-L133)
+- [Introduction to REST and HTTP](https://github.com/java-gcp-220228/training/blob/main/week-2/day-1/http-rest-webservices.md)
 
 ## Day 2
 - RESTful naming conventions
@@ -151,3 +152,67 @@
     - [transfer function example](https://github.com/java-gcp-220228/training/blob/main/week-2/day-5/sql-script.sql#L204-L229)
     - [transfer procedure example](https://github.com/java-gcp-220228/training/blob/main/week-2/day-5/sql-script.sql#L232-L255)
     - [invoking function v. procedure](https://github.com/java-gcp-220228/training/blob/main/week-2/day-5/sql-script.sql#L258-L259)
+
+# Questions
+* What is SQL?
+* Is SQL a programming language?
+* What are the 5 sublanguages in SQL?
+* What commands does DDL contain?
+* What commands does DML contain?
+* What command(s) does DQL contain?
+* What commands does TCL contain?
+* What commands does DCL contain?
+* What constraints are there in SQL?
+* What is a primary key?
+* What is a foreign key?
+* What is referential integrity?
+* What is JDBC?
+* What are the classes/interfaces that are part of the JDBC API?
+* What are the general steps to using JDBC?
+* What sublanguage do CRUD operations belong to? What are the commands corresponding to each letter in the CRUD acronym?
+* What is REST?
+* What are the constraints of REST?
+* What is HTTP?
+* What are the components of an HTTP request?
+* What are the components of an HTTP response?
+* What do the 1XX response status codes mean?
+* What do the 2XX response status codes mean?
+* What do the 3XX response status codes mean?
+* What do the 4XX response status codes mean?
+* What do the 5xx response status codes mean?
+---
+* What is a GET request meant to do?
+* What is a POST request meant to do?
+* What is a PUT request meant to do?
+* What is a PATCH request meant to do?
+* What is a DELETE request meant to do?
+* What are singleton v. collection resources in REST?
+* What are sub-singleton and sub-collection resources?
+* Describe 3-layer architecture
+* What is unit testing?
+* Why do we use mockito w/ unit testing?
+---
+* What is a thread?
+* What are two ways of creating and running a thread?
+* What type of interface is the Runnable interface and why is this useful?
+* What is a race condition?
+* What helps to prevent race conditions?
+* How does the lock-key model for synchronization work?
+* What is SQL injection?
+* What are some issues that arise with insufficient logging and monitoring?
+---
+* What are the DQL clauses, and what order do they go in?
+* What is the difference between WHERE and HAVING?
+* How does GROUP BY work?
+* What is the difference between scalar and aggregate functions?
+* Describe the 3 levels of normalization?
+* What is an ERD / Entity Relationship Diagram?
+---
+* What is a subquery?
+* What is a view?
+* How do Set operations work compared to JOINS?
+* What are the 4 Set operations?
+* What is a SQL index?
+* What are the 4 ACID properties?
+* What are read phenomena? What are the isolation levels?
+* What is the difference between a Postgres function and procedure?
