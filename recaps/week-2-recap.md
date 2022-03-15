@@ -119,3 +119,35 @@
         - [example #2](./images/erd-2.JPG)
 - Unit tests for addStudent()
     - [demo](https://github.com/java-gcp-220228/training/blob/main/week-2/day-4/javalin-demo/src/test/java/com/revature/service/StudentServiceTest.java#L121-L201)
+
+## Day 5
+- Pseudotables
+    - [image](./images/pseudotables.JPG)
+    - Subquery
+        - [SELECT employee with highest salary](https://github.com/java-gcp-220228/training/blob/main/week-2/day-5/sql-script.sql#L42-L48)
+        - [SELECT employee with second highest salary w/ subquery](https://github.com/java-gcp-220228/training/blob/main/week-2/day-5/sql-script.sql#L50-L58)
+    - View
+        - [Example #1](https://github.com/java-gcp-220228/training/blob/main/week-2/day-5/sql-script.sql#L125-L133)
+        - [Example #2](https://github.com/java-gcp-220228/training/blob/main/week-2/day-5/sql-script.sql#L136-L145)
+- Set Operations
+    - [image](./images/set-operations.JPG)
+    - [UNION v. UNION ALL v. INTERSECT v. EXCEPT](./images/set-operations-comparisons.JPG)
+    - [SELECT employee with second highest salary using EXCEPT set operation + subquery](https://github.com/java-gcp-220228/training/blob/main/week-2/day-5/sql-script.sql#L79-L94)
+    - [SELECT employee with third and fourth highest salaries using EXCEPT set operation + subquery](https://github.com/java-gcp-220228/training/blob/main/week-2/day-5/sql-script.sql#L96-L111)
+- IN keyword example
+    - [demo](https://github.com/java-gcp-220228/training/blob/main/week-2/day-5/sql-script.sql#L115-L122)
+- SQL Index
+    - [Balanced Tree (B-Tree) data structure diagram](./images/b-tree.JPG)
+    - [some query optimizations](./images/query-optimization.JPG)
+    - [Creating an index for first_name](https://github.com/java-gcp-220228/training/blob/main/week-2/day-5/sql-script.sql#L173-L176)
+- SQL Transactions
+    - [image](./images/sql-transactions.JPG)
+    - ACID properties
+        - [image](./images/acid-properties.JPG)
+    - Read phenonomena and isolation levels
+        - [image](./images/read-phenomena-isolation-levels.JPG)
+- Postgres Functions and Procedures
+    - [image](./images/functions-and-procedures.JPG)
+    - [transfer function example](https://github.com/java-gcp-220228/training/blob/main/week-2/day-5/sql-script.sql#L204-L229)
+    - [transfer procedure example](https://github.com/java-gcp-220228/training/blob/main/week-2/day-5/sql-script.sql#L232-L255)
+    - [invoking function v. procedure](https://github.com/java-gcp-220228/training/blob/main/week-2/day-5/sql-script.sql#L258-L259)
