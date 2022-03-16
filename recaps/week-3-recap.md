@@ -92,6 +92,7 @@
 * How do you include a .js file to an HTML webpage?
 * What are the 3 ways of declaring variables? How are they each different from each other?
 * What are the datatypes in JavaScript?
+* What is the difference between == and ===?
 * What is hoisting?
 * Describe an object in JavaScript?
 * How do you create an object in JS?
