@@ -79,6 +79,47 @@
     - Call, Apply, and Bind
         - [demo](https://github.com/java-gcp-220228/training/blob/main/week-3/4_javascript_scopes_and_functions/index.js#L215-L244)
 
+## Day 2
+- Arrays
+    - [Instantiating an empty array](https://github.com/java-gcp-220228/training/blob/main/week-3/5_javascript_arrays/index.js#L5)
+    - [Instantiating an array with pre-populated values](https://github.com/java-gcp-220228/training/blob/main/week-3/5_javascript_arrays/index.js#L7)
+    - [Array functions (push, pop, unshift, shift)](https://github.com/java-gcp-220228/training/blob/main/week-3/5_javascript_arrays/index.js#L10-L14)
+    - [for..of v. for..in](https://github.com/java-gcp-220228/training/blob/main/week-3/5_javascript_arrays/index.js#L25-L54)
+- CSS Flexbox
+    - [demo](https://github.com/java-gcp-220228/training/tree/main/week-3/6_css_flexbox)
+- CSS Grid
+    - [demo](https://github.com/java-gcp-220228/training/tree/main/week-3/7_css_grid)
+- DOM
+    - [image](./images/dom.JPG)
+    - DOM Manipulation
+        - [Selecting elements in JS](https://github.com/java-gcp-220228/training/blob/main/week-3/8_dom_manipulation_intro/index.js#L1-L6)
+        - [innerHTML v. innerText v. textContent](https://github.com/java-gcp-220228/training/blob/main/week-3/8_dom_manipulation_intro/index.js#L10-L13)
+        - [innerHTML example](https://github.com/java-gcp-220228/training/blob/main/week-3/8_dom_manipulation_intro/index.js#L14)
+        - [innerText example](https://github.com/java-gcp-220228/training/blob/main/week-3/8_dom_manipulation_intro/index.js#L17)
+        - [Adding an element to another element](https://github.com/java-gcp-220228/training/blob/main/week-3/8_dom_manipulation_intro/index.js#L21-L27)
+        - [Styling an element](https://github.com/java-gcp-220228/training/blob/main/week-3/8_dom_manipulation_intro/index.js#L29-L37)
+        - [Modifying element attributes](https://github.com/java-gcp-220228/training/blob/main/week-3/8_dom_manipulation_intro/index.js#L39-L56)
+- Cross Site Scripting (XSS)
+    - [Example](https://github.com/java-gcp-220228/training/blob/main/week-3/8_dom_manipulation_intro/index.js#L58-L73)
+    - [OWASP Top 10](https://owasp.org/www-project-top-ten/2017/A7_2017-Cross-Site_Scripting_(XSS))
+- Events & Event Listeners
+    - [notes](https://github.com/java-gcp-220228/training/blob/main/week-3/9_events_and_listeners/index.js#L1-L8)
+    - [Adding event listener to button](https://github.com/java-gcp-220228/training/blob/main/week-3/9_events_and_listeners/index.js#L29-L34)
+    - [Event bubbling and capturing](https://github.com/java-gcp-220228/training/blob/main/week-3/9_events_and_listeners/index.js#L44-L102)
+- Asynchronous JavaScript architecture
+    - [image](./images/async-architecture.JPG)
+    - Web APIs (Web Browser managed)
+        - [setInterval](https://github.com/java-gcp-220228/training/blob/main/week-3/10_fetch/index.js#L4-L8)
+        - [setTimeout](https://github.com/java-gcp-220228/training/blob/main/week-3/10_fetch/index.js#L10-L13)
+        - [fetch](https://github.com/java-gcp-220228/training/blob/main/week-3/10_fetch/index.js#L37-L39)
+- Promises
+    - [image](./images/promises.JPG)
+- Fetch Pokemon Example
+    - [fetch using .then and .catch for the promise returned](https://github.com/java-gcp-220228/training/blob/main/week-3/10_fetch/index.js#L37-L55)
+    - [fetch using async/await](https://github.com/java-gcp-220228/training/blob/main/week-3/10_fetch/index.js#L69-L86)
+    - [inserting data from fetch into table](https://github.com/java-gcp-220228/training/blob/main/week-3/10_fetch/index.js#L91-L113)
+
+
 # Questions
 * What is HTML?
 * When you create an HTML file, what are some of the important boilerplate tags?
