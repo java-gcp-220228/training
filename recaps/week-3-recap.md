@@ -152,3 +152,27 @@
 * What are closures?
 * How does an arrow function get the meaning of the `this` differently than a named or anonymous function?
 * What is call, apply, and bind used for?
+---
+* How do you create an array in JS?
+* What are the 4 commonly used functions for an array in JS?
+* What is the difference between a for..of loop and for..in loop?
+* What is CSS flexbox?
+* What is CSS grid?
+* What is the DOM?
+* What are some different functions used to select elements from the DOM in JS?
+* How can you set the text of an element through DOM manipulation?
+* How do you create a new element using DOM manipulation?
+* How do you add this newly created element as a child for another element?
+* How do you go about changing the styling of the element using DOM manipulation?
+* How do you add/change the value of attribute using DOM manipulation?
+* What is cross-site scripting (XSS)?
+* What are events in JS?
+* How do you add an event listener to an element? What is an event listener?
+* What is a callback function?
+* What is event capturing and bubbling?
+* How does asynchronous JavaScript work? What is the purpose of the message queue and event loop?
+* What is a Promise?
+* What states does can a Promise be in?
+* What are two ways to handle a Promise?
+* What is Fetch?
+* What does Fetch return?
