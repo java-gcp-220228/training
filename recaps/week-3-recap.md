@@ -119,6 +119,14 @@
     - [fetch using async/await](https://github.com/java-gcp-220228/training/blob/main/week-3/10_fetch/index.js#L69-L86)
     - [inserting data from fetch into table](https://github.com/java-gcp-220228/training/blob/main/week-3/10_fetch/index.js#L91-L113)
 
+## Day 3
+- HttpSession
+    - [image](./images/httpsession-auth.JPG)
+    - [Login example](https://github.com/java-gcp-220228/training/blob/main/week-3/gradify_httpsession_auth/src/main/java/com/revature/controller/AuthenticationController.java#L20-L36)
+    - [Logout example](https://github.com/java-gcp-220228/training/blob/main/week-3/gradify_httpsession_auth/src/main/java/com/revature/controller/AuthenticationController.java#L38-L42)
+    - [Fake protected endpoint](https://github.com/java-gcp-220228/training/blob/main/week-3/gradify_httpsession_auth/src/main/java/com/revature/controller/AssignmentController.java#L21-L31)
+- JSON Web Tokens (JWT)
+    - [image](./images/jwt.JPG)
 
 # Questions
 * What is HTML?
