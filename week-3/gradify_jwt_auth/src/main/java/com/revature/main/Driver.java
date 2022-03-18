@@ -13,7 +13,10 @@ import java.sql.SQLException;
 public class Driver {
 
     public static void main(String[] args) {
-        Javalin app = Javalin.create();
+        Javalin app = Javalin.create((config) -> {
+            config.enableCorsForAllOrigins();
+//            config.enableCorsForOrigin("http://localhost:8081");
+        });
 
         map(app, new AuthenticationController(), new ExceptionController(), new AssignmentController());
 

@@ -30,7 +30,9 @@ public class AuthenticationController implements Controller {
 
         String jwt = this.jwtService.createJWT(user);
 
-        ctx.json(jwt);
+        ctx.header("Access-Control-Expose-Headers", "*");
+        ctx.header("Token", jwt);
+        ctx.json(user);
     };
 
     @Override
