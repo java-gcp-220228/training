@@ -200,3 +200,16 @@
 * What are two ways to handle a Promise?
 * What is Fetch?
 * What does Fetch return?
+---
+* What is functional programming?
+* What are pure functions?
+* What does it mean to be declarative v. imperative?
+* What is map?
+* What is filter?
+* What is reduce?
+* What are the levels in the Richardson Maturity Model?
+* What does idempotent mean?
+* What does safe mean?
+* How would you classify GET, DELETE, PUT, and POST respectively in terms of being idempotent and safe?
+* What is the purpose of GCP cloud storage?
+* What storage classes exist for GCP Cloud Storage?
