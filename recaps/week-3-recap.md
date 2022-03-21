@@ -128,6 +128,30 @@
 - JSON Web Tokens (JWT)
     - [image](./images/jwt.JPG)
 
+## Day 4
+- Gradify backend using JWTs
+    - [login endpoint](https://github.com/java-gcp-220228/training/blob/main/week-3/gradify_jwt_auth/src/main/java/com/revature/controller/AuthenticationController.java#L23-L36)
+        - [JWTService createJWT](https://github.com/java-gcp-220228/training/blob/main/week-3/gradify_jwt_auth/src/main/java/com/revature/service/JWTService.java#L26-L35)
+    - [example of parsing JWT for getAllAssignments endpoint](https://github.com/java-gcp-220228/training/blob/main/week-3/gradify_jwt_auth/src/main/java/com/revature/controller/AssignmentController.java#L34-L37)
+        - [JWTService parseJwt](https://github.com/java-gcp-220228/training/blob/main/week-3/gradify_jwt_auth/src/main/java/com/revature/service/JWTService.java#L37-L48)
+- Gradify Frontend
+    - [demo](https://github.com/java-gcp-220228/training/tree/main/week-3/gradify_frontend_jwt)
+
+## Day 5
+- Functional Programming
+    - [image](./images/functional-programming.JPG)
+    - [demo](https://github.com/java-gcp-220228/training/blob/main/week-3/12_functional_programming/index.js)
+        - map
+        - filter
+        - reduce
+- Richardson Maturity Model
+    - [image](./images/richardson-maturity-model.JPG)
+- Idempotent and Safe operations
+    - [image](./images/idempotent-and-safe-operations.JPG)
+- GCP Cloud Storage
+    - [The why](./images/rationale-for-using-gcp-cloud-storage.JPG)
+    - [Cloud storage classes](./images/cloud-storage-classes.JPG)
+
 # Questions
 * What is HTML?
 * When you create an HTML file, what are some of the important boilerplate tags?
