@@ -1,0 +1,22 @@
+<configuration>
+    <appender name="myConsoleAppender" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{dd MM yyyy - HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="myFileAppender" class="ch.qos.logback.core.FileAppender">
+        <file>mylogfile.log</file>
+        <append>true</append>
+        <encoder>
+            <pattern>%d{dd MM yyyy - HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- Configure the logger -->
+    <root level="INFO"> <!-- We only want INFO level or higher messages to be printed out -->
+        <!-- Configure what appenders to use -->
+        <appender-ref ref="myConsoleAppender" />
+        <appender-ref ref="myFileAppender" />
+    </root>
+</configuration>

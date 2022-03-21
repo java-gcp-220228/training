@@ -1,3 +1,8 @@
+DROP TABLE IF EXISTS user_role CASCADE;
+DROP TABLE IF EXISTS assignments CASCADE;
+DROP TABLE IF EXISTS users CASCADE;
+
+
 CREATE TABLE user_role (
 	id SERIAL PRIMARY KEY,
 	role VARCHAR(20) NOT NULL
@@ -36,6 +41,7 @@ CREATE TABLE assignments (
 	id SERIAL PRIMARY KEY,
 	assignment_name VARCHAR(200) NOT NULL,
 	grade INTEGER,
+	assignment_image bytea,
 	student_id INTEGER NOT NULL,
 	grader_id INTEGER,
 	CONSTRAINT fk_assignments_students FOREIGN KEY (student_id) REFERENCES users(id),
