@@ -55,5 +55,7 @@ VALUES
 SELECT *
 FROM assignments;
 
-
+SELECT a.assignment_image 
+FROM assignments a
+WHERE a.id = 6 AND ;
 
