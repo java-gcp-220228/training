@@ -15,6 +15,39 @@ Topics
 - Docker
 - SonarCloud
 
+## Intro to DevOps
+- [NOTES](https://github.com/java-gcp-220228/training/blob/main/week-4/ci-cd.md)
+    - [Continuous Integration](https://github.com/java-gcp-220228/training/blob/main/week-4/ci-cd.md#continuous-integration)
+    - [Continuous Delivery](https://github.com/java-gcp-220228/training/blob/main/week-4/ci-cd.md#continuous-delivery)
+    - [Continuous Deployment](https://github.com/java-gcp-220228/training/blob/main/week-4/ci-cd.md#continuous-deployment)
+    - [Example Tools](https://github.com/java-gcp-220228/training/blob/main/week-4/ci-cd.md#example-tools)
+- [Github Actions CI workflow](https://github.com/java-gcp-220228/gradify-backend/blob/main/.github/workflows/gradle.yml)
+- Jenkins Pipeline Configuration
+    - [Setting up Source Code Management](./images/jenkins-source-code.PNG)
+    - [Setting up Build steps](./images/jenkins-build-steps.PNG)
+
+## Gradle
+- [Configuring `jar` task for generating executable .jar file](https://github.com/java-gcp-220228/gradify-backend/blob/main/build.gradle#L41-L53)
+
+## SonarCloud
+- [Gradify Backend SonarCloud report example](https://sonarcloud.io/summary/overall?id=java-gcp-220228_gradify-backend)
+- Configuring SonarCloud Code Scanning
+    - [SonarCloud Github Actions Workflow](https://github.com/java-gcp-220228/gradify-backend/blob/main/.github/workflows/sonarcloud.yml)
+    - [sonarqube plugin](https://github.com/java-gcp-220228/gradify-backend/blob/main/build.gradle#L3)
+    - [sonarqube gradle task configuration](https://github.com/java-gcp-220228/gradify-backend/blob/main/build.gradle#L30-L39)
+- Configuring Code Coverage
+    - [jacoco plugin](https://github.com/java-gcp-220228/gradify-backend/blob/main/build.gradle#L4)
+    - [jacoco plugin configuration](https://github.com/java-gcp-220228/gradify-backend/blob/main/build.gradle#L14-L17)
+    - [test task configuration](https://github.com/java-gcp-220228/gradify-backend/blob/main/build.gradle#L19-L21)
+    - [jacocoTestReport task configuration](https://github.com/java-gcp-220228/gradify-backend/blob/main/build.gradle#L23-L28)
+
+## Intro to Cloud Computing
+- [NOTES](https://github.com/java-gcp-220228/training/blob/main/week-4/cloud-computing.md)
+    - [Advantages](https://github.com/java-gcp-220228/training/blob/main/week-4/cloud-computing.md#advantages-of-cloud-computing)
+    - [IaaS/PaaS/SaaS](https://github.com/java-gcp-220228/training/blob/main/week-4/cloud-computing.md#3-models-of-cloud-computing)
+    - [GCP Cloud SQL v. GCP Compute Engine v. GCP Cloud Storage](https://github.com/java-gcp-220228/training/blob/main/week-4/cloud-computing.md#google-cloud-platform)
+    - [Horizontal v. Vertical Scaling](https://github.com/java-gcp-220228/training/blob/main/week-4/cloud-computing.md#horizontal-v-vertical-scaling)
+
 ## Docker
 - [container](./images/containers.JPG)
 - [docker image](./images/docker-image.JPG)
