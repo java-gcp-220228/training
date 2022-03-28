@@ -87,8 +87,20 @@ Topics
 - What is a gradle task?
 - In what file do we configure gradle tasks?
 - What is Jenkins?
-- What is the purpose of a Jenkins pipeline?
-- What is the purpose of containerization?
-- How are docker containers different than virtual machines?
-- What is the advantage of docker containers v. VMs?
-- 
+    - What is the purpose of a Jenkins pipeline?
+- What is Docker?
+    - What is the purpose of containerization?
+    - How are docker containers different than virtual machines?
+    - What is the advantage of docker containers v. VMs?
+    - What are docker images?
+    - What is a Dockerfile?
+    - What are some common commands used with Docker?
+    - What two commands is the `docker run` command made of?
+    - What is the purpose of Docker port mapping?
+    - What is Docker compose?
+    - What is the purpose of Docker volumes?
+- What is SonarCloud?
+    - What are code smells?
+    - Bugs?
+    - Security vulnerabilities?
+    - What plugin do we configure alongside SonarCloud to have code coverage reporting?
