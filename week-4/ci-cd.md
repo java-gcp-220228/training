@@ -26,7 +26,7 @@ As soon as code is committed, pushed, and those changes are able to pass every s
         - Example of deployment:
             - `git clone <repository>`
             - `cd <repository folder>`
-            - `gradle jar`
+            - `gradle build`
             - `cd build/libs`
             - `java -jar <jar file name>`
 - Github Actions: CI/CD tool commonly used for CI that can automatically run builds (compile + test) to detect issues with the project

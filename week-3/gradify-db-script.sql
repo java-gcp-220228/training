@@ -48,14 +48,12 @@ CREATE TABLE assignments (
 	CONSTRAINT fk_assignments_graders FOREIGN KEY (grader_id) REFERENCES users(id)
 );
 
-INSERT INTO assignments (assignment_name, grade, student_id, grader_id) 
-VALUES 
-('Midterm 1', 90, 2, 1);
+--INSERT INTO assignments (assignment_name, student_id) 
+--VALUES 
+--('Midterm 1', 2),
+--('Midterm 1', 3),
+--('Homework 1.1', 2),
+--('Homework 1.1', 3);
 
 SELECT *
 FROM assignments;
-
-SELECT a.assignment_image 
-FROM assignments a
-WHERE a.id = 6 AND ;
-
