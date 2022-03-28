@@ -23,7 +23,7 @@ Topics
     - [Example Tools](https://github.com/java-gcp-220228/training/blob/main/week-4/ci-cd.md#example-tools)
 - [Github Actions CI workflow](https://github.com/java-gcp-220228/gradify-backend/blob/main/.github/workflows/gradle.yml)
 - Jenkins Pipeline Configuration
-    - [Setting up Source Code Management](./images/jenkins-source-code.PNG)
+    - [Setting up Source Code Management](./images/jenkins-source-code.png)
     - [Setting up Build steps](./images/jenkins-build-steps.PNG)
 
 ## Gradle
