@@ -47,6 +47,7 @@ Topics
     - [IaaS/PaaS/SaaS](https://github.com/java-gcp-220228/training/blob/main/week-4/cloud-computing.md#3-models-of-cloud-computing)
     - [GCP Cloud SQL v. GCP Compute Engine v. GCP Cloud Storage](https://github.com/java-gcp-220228/training/blob/main/week-4/cloud-computing.md#google-cloud-platform)
     - [Horizontal v. Vertical Scaling](https://github.com/java-gcp-220228/training/blob/main/week-4/cloud-computing.md#horizontal-v-vertical-scaling)
+- [GCP Load Balancer demo](./images/gcp-load-balancer.JPG)
 
 ## Docker
 - [container](./images/containers.JPG)
