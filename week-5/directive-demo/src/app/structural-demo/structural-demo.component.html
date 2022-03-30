@@ -1,0 +1,53 @@
+
+<!-- *ngIf example -->
+
+<!-- When the expression for *ngIf evaluates to false, then do not display the div (or its children)
+If it evaluates to true, then display the div (and its children)-->
+<div *ngIf="isVisible"> <!-- *ngIf = "<boolean expression>"-->
+  <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, quibusdam?</h1>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quo similique, nostrum expedita maxime mollitia natus at quis molestias hic sunt accusamus nisi rem? Autem totam, explicabo quam ipsum beatae impedit minus quaerat? Ducimus, exercitationem ut fuga aperiam perspiciatis omnis dolores pariatur provident totam repellat temporibus quod, doloremque asperiores eaque? Dolores autem, fuga, tenetur beatae et molestiae eligendi quae eos, quis mollitia voluptatem! Ad, sint, recusandae accusamus expedita cupiditate provident quod doloribus aliquam quia quis nam odio neque aperiam, eum tempore corporis dolor suscipit illo ut natus animi officiis. Sed veniam aliquid sapiente iste, veritatis excepturi reprehenderit nihil debitis fugit.</p>
+</div>
+
+<button (click)="whenToggleButtonClicked()">Toggle</button>
+
+<h1>Person Table</h1>
+<!-- *ngFor example -->
+<table>
+  <thead>
+    <tr>
+      <th>Order</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Email</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let person of people; let i = index">
+      <td>{{ i }}</td>
+      <td>{{ person.firstName }}</td>
+      <td>{{ person.lastName }}</td>
+      <td>{{ person.email }}</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- ngSwitch -->
+<!-- ngSwitch, *ngSwitchCase -->
+<div [ngSwitch]="currentItem">
+  <div *ngSwitchCase="1">
+    <h1>Section 1</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis nisi voluptas cupiditate voluptatem. Dolore, in suscipit magnam quis maxime nemo fuga deserunt praesentium odit alias dicta! Nostrum, nulla recusandae! Inventore ipsa sequi at natus, iusto quod incidunt a distinctio temporibus id expedita ad cum labore laborum repellendus! Ab, assumenda veritatis.</p>
+  </div>
+  <div *ngSwitchCase="2">
+    <h1>Section 2</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt quibusdam quo, dolore ab sequi hic, quaerat architecto assumenda accusamus deleniti corporis eaque incidunt quos, labore molestiae. Rerum corrupti officiis tempore amet harum, unde nisi sit quisquam, ipsum illum laudantium maxime!</p>
+  </div>
+  <div *ngSwitchCase="3">
+    <h1>Section 3</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut quibusdam voluptas fuga eveniet. Consectetur, quo dolor nulla alias doloremque ipsam magni omnis tempora odit, est ipsum fuga explicabo, maxime repellendus! Vero distinctio officiis maiores laborum at, voluptatem voluptas tempora. Laudantium beatae illo itaque suscipit possimus tempore, aperiam voluptates ducimus natus temporibus quod consequuntur. Quaerat, vero distinctio minima officiis harum veniam?</p>
+  </div>
+</div>
+
+<button (click)="currentItem = 1">Toggle Section 1</button>
+<button (click)="currentItem = 2">Toggle Section 2</button>
+<button (click)="currentItem = 3">Toggle Section 3</button>

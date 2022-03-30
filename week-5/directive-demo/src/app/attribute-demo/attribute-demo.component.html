@@ -1,0 +1,23 @@
+<div (mouseover)="lastSectionHoveredOver = 1"
+      (mouseout)="lastSectionHoveredOver = -1"
+      [ngClass]="{ 'active': lastSectionHoveredOver === 1 }"
+      [ngStyle]="{ 'color': (lastSectionHoveredOver === 1 ? 'white' : 'black') }">
+  <h1>Section 1</h1>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem distinctio earum, non deserunt doloremque est neque repellat porro libero sequi id error et consequatur ab voluptatem vero consequuntur consectetur debitis minus veritatis dolores quaerat tempora maiores cum! Facere fugiat magni culpa unde, pariatur quo quibusdam dolorum, porro, atque quas illum?</p>
+</div>
+
+<div (mouseover)="lastSectionHoveredOver = 2"
+      (mouseout)="lastSectionHoveredOver = -1"
+      [ngClass]="{ 'active': lastSectionHoveredOver === 2 }"
+      [ngStyle]="{ 'color': (lastSectionHoveredOver === 2 ? 'white' : 'black') }">
+  <h1>Section 2</h1>
+  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus ipsa eveniet, asperiores iste at aperiam a iusto qui libero sint necessitatibus aspernatur dolorum deserunt magnam placeat provident voluptate? Tenetur totam laudantium magnam repellat quam commodi quaerat consequuntur. Rerum quia molestias quis ipsa alias architecto, repellendus illo animi provident? Nihil vero harum non maxime temporibus asperiores pariatur, voluptatibus minus quos laboriosam?</p>
+</div>
+
+<div (mouseover)="lastSectionHoveredOver = 3"
+      (mouseout)="lastSectionHoveredOver = -1"
+      [ngClass]="{ 'active': lastSectionHoveredOver === 3 }"
+      [ngStyle]="{ 'color': (lastSectionHoveredOver === 3 ? 'white' : 'black') }">
+  <h1>Section 3</h1>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat voluptate doloribus quas, sed tenetur possimus odio minima omnis voluptatum est dolores quo suscipit nam earum inventore fugiat ipsum. Reiciendis minima in adipisci officiis, animi nihil vel. Laboriosam est nobis consequuntur?</p>
+</div>
