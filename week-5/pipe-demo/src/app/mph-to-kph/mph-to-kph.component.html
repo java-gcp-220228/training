@@ -1,0 +1,6 @@
+<h1>Mph / Kph Converter</h1>
+<input type="number" [(ngModel)]="inputValue" />
+<p>Mph to Kph: {{ mphToKph }}</p>
+<p>Output: {{ inputValue | mphKph: mphToKph }}</p>
+
+<button (click)="mphToKph = !mphToKph">Switch Conversion</button>

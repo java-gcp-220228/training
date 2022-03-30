@@ -1,0 +1,21 @@
+<table>
+  <thead>
+    <tr>
+      <th>id</th>
+      <th>amount</th>
+      <th>status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let reimbursement of reimbursements | statusFilter: statusFilter ">
+      <td>{{ reimbursement.id }}</td>
+      <td>{{ reimbursement.amount }}</td>
+      <td>{{ reimbursement.status }}</td>
+    </tr>
+  </tbody>
+</table>
+
+<button (click)="statusFilter='all'">All</button>
+<button (click)="statusFilter = 'pending'">Pending</button>
+<button (click)="statusFilter = 'approved'">Approved</button>
+<button (click)="statusFilter = 'denied'">Denied</button>
