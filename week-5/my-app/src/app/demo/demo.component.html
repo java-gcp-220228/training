@@ -1,0 +1,13 @@
+<p>{{ firstName }} {{ lastName }}</p> <!-- String interpolation where we are displaying the firstName and lastName
+variables' values from the typescript class -->
+
+<img [src]="imageUrl" /> <!-- Property binding on the src attribute. imageUrl is a variable
+in the typescript class -->
+
+<button (click)="generateImage()">Generate new image</button> <!-- Event binding, whereby we invoke
+the generateImage function in the typescript class whenever we click on the element -->
+
+<p>Output: {{ output }}</p> <!-- String interpolation -->
+<input (input)="someFunction($event)" type="text" /> <!-- Event binding, where we pass
+the event object using $event (special Angular syntax) as an argument to
+someFunction(...) -->

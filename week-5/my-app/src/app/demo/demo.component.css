@@ -1,0 +1,8 @@
+:host { /* pseudo-class selector referring to the component itself */
+  border: 5px solid green;
+  display: inline-block;
+}
+
+p {
+  color: cyan;
+}

@@ -1,0 +1,8 @@
+/* app-demo {
+  border: 5px solid green;
+  display: inline-block;
+} */
+
+p { /* The styling here only applies to p tags directly defined inside of app.component.html */
+  color: red;
+}
