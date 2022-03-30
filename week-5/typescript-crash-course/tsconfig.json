@@ -1,0 +1,9 @@
+{
+    "include": [
+        "index.ts"
+    ],
+    "compilerOptions": {
+        "experimentalDecorators": true,
+        "allowJs": true
+    }
+}

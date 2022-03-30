@@ -1,0 +1,15 @@
+{
+  "name": "typescript-crash-course",
+  "version": "1.0.0",
+  "description": "This project is intended as a crash course for TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "transpile": "tsc --project tsconfig.json"
+  },
+  "author": "Bach Tran",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.6.3"
+  }
+}

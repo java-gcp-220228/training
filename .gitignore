@@ -16,3 +16,6 @@ bin/
 *.iml
 *.iws
 *.ipr
+
+# npm
+node_modules/
