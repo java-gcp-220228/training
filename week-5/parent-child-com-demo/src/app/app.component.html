@@ -1,0 +1,7 @@
+<h1>App Component</h1>
+<app-table [items]="pokemons"></app-table> <!-- Property binding: binding values to an attribute -->
+<!-- someString is a custom attribute of our component, made possible by the @Input decorator -->
+
+<app-poke-search (poke)="pokemons.push($event)"></app-poke-search>
+
+<button (click)="pokemons = []">Clear Pokemon</button>
