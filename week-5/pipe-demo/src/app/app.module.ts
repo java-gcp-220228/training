@@ -4,21 +4,19 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { MphToKphComponent } from './mph-to-kph/mph-to-kph.component';
-import { MphKphPipe } from './mph-kph.pipe';
 import { FilteringDemoComponent } from './filtering-demo/filtering-demo.component';
-import { StatusFilterPipe } from './status-filter.pipe';
+import { PipeModule } from './pipe/pipe.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     MphToKphComponent,
-    MphKphPipe,
-    FilteringDemoComponent,
-    StatusFilterPipe
+    FilteringDemoComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    PipeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
