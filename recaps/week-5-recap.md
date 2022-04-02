@@ -26,6 +26,8 @@
                 - dependencies
                 - devDependencies
             - package-lock.json
+- Angular Components
+    - [notes](./images/angular-components-notes.png)
 
 # Questions
 * What are single page applications?
