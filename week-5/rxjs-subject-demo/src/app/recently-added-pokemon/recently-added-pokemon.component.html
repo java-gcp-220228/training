@@ -1,0 +1,9 @@
+<h1>Recently Added Pokemon Component</h1>
+<ng-container *ngIf="recentPokemon"> <!-- ng-container is a special tag that is ignored and not displayed in the DOM -->
+  <!-- It can be very helpful if you need to use directives such as ngIf or ngFor, but don't want an additional div being
+  added to the webpage -->
+  <p>id: {{ recentPokemon.id }}</p>
+  <p>name: {{ recentPokemon.name }}</p>
+  <img [src]="recentPokemon.sprites.front_default" [alt]="recentPokemon.name + ' image'">
+</ng-container>
+
