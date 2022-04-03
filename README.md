@@ -14,8 +14,11 @@ This is the training repository for the Java Fullstack GCP batch starting Februa
 
 | Week | Topics Covered | Link |
 | :--- | :------------- | :--- |
-| 1 | Java Fundamentals and data structures | |
-
+| 1 | Java Fundamentals and data structures | [link](https://github.com/java-gcp-220228/training/blob/main/recaps/week-1-recap.md) |
+| 2 | SQL and Miscellaenous Java Topics | [link](https://github.com/java-gcp-220228/training/blob/main/recaps/week-2-recap.md) |
+| 3 | Frontend Technologies | [link](https://github.com/java-gcp-220228/training/blob/main/recaps/week-3-recap.md) |
+| 4 | Cloud and DevOps | [link](https://github.com/java-gcp-220228/training/blob/main/recaps/week-4-recap.md) |
+| 5 | Angular | [link](https://github.com/java-gcp-220228/training/blob/main/recaps/week-5-recap.md) |
 ---
 
 ## Weekly Expectations:
