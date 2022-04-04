@@ -1,0 +1,38 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+
+    <!--
+        Spring utilizes this idea of an IOC container...
+            - How and What is a Spring bean is dependent on the configurations of this file
+
+            Three types of injections:
+            1) constructor
+            2) setter
+            3) field (not recommended)
+    -->
+
+    <bean name="pokemonDao" class="com.revature.daos.PokemonDaoImpl"/>
+
+    <!-- this is where we are manually defining our constructor injection  -->
+<!--    <bean name="pokemonService" class="com.revature.services.PokemonServiceImpl">-->
+    <!--    index = position in the args of that constructor; ref = what bean is being injected into constructor-->
+<!--        <constructor-arg index="0" ref="pokemonDao"/>-->
+<!--    </bean>-->
+
+    <!-- setter injection bean example  -->
+<!--    <bean name="pokemonService" class="com.revature.services.PokemonServiceImpl">-->
+    <!--    name = name of variable given by you in your class-->
+<!--        <property name="pokeDao" ref="pokemonDao" />-->
+<!--    </bean>-->
+
+    <!-- autowired attribute -->
+    <!--  three ways to do it: byType (setter), byName(setter), and constructor (constructor)-->
+    <bean name="pokemonService" class="com.revature.services.PokemonServiceImpl" autowire="byType" />
+
+</beans>
