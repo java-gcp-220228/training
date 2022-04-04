@@ -1,0 +1,30 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-configuration SYSTEM
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <session-factory>
+        <!-- JDBC settings -->
+        <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+        <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/postgres</property>
+        <property name="hibernate.default_schema">hibernate_demo</property>
+
+        <!-- SQL Dialect -->
+        <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+
+        <!-- hbm2ddl.auto
+            1. create - used to create new database tables based on our entity mappings. If tables already exist, it will drop
+            the existing tables and recreate them based on the mappings
+            2. update - used to alter the existing tables to match the class mappings
+            3. validate - validate existing tables to see if they match with the class mappings. If there is an inconsistency,
+            it will throw an exception
+            4. create-drop - same as create, but will drop tables when SessionFactory is closed
+         -->
+        <property name="hbm2ddl.auto">create</property>
+
+        <!-- Specify our entity/class mappings here -->
+        <mapping class="com.revature.models.User"></mapping>
+        <mapping class="com.revature.models.Reimbursement"></mapping>
+
+    </session-factory>
+</hibernate-configuration>
