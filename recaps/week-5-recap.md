@@ -170,6 +170,9 @@
 * What types does TypeScript add in addition to what already exists in JS?
 * Describe the design pattern that RxJS subjects help to implement
 * What is the pub/sub design pattern?
+* What is Angular routing?
+* How do we set up routing?
+* What tag inside of the HTML templates display a particular route's component?
 
 ## SDLC
 * What are the phases of the SDLC?
