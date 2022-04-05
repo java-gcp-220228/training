@@ -86,6 +86,9 @@
     - [notes](./images/angular-http-client.png)
 - Lazy Loading v. Eager Loading
     - [images](./images/lazy-loading-eager-loading.png)
+- Angular Routing
+    - [routing module example](https://github.com/java-gcp-220228/training/blob/main/week-5/routing-demo/src/app/app-routing.module.ts#L8-L13)
+    - [displaying route in the HTML](https://github.com/java-gcp-220228/training/blob/main/week-5/routing-demo/src/app/app.component.html#L2)
 
 # Publisher / subscriber pattern Model
 - Pub/sub model
@@ -167,6 +170,9 @@
 * What types does TypeScript add in addition to what already exists in JS?
 * Describe the design pattern that RxJS subjects help to implement
 * What is the pub/sub design pattern?
+* What is Angular routing?
+* How do we set up routing?
+* What tag inside of the HTML templates display a particular route's component?
 
 ## SDLC
 * What are the phases of the SDLC?
