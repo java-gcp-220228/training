@@ -86,6 +86,9 @@
     - [notes](./images/angular-http-client.png)
 - Lazy Loading v. Eager Loading
     - [images](./images/lazy-loading-eager-loading.png)
+- Angular Routing
+    - [routing module example](https://github.com/java-gcp-220228/training/blob/main/week-5/routing-demo/src/app/app-routing.module.ts#L8-L13)
+    - [displaying route in the HTML](https://github.com/java-gcp-220228/training/blob/main/week-5/routing-demo/src/app/app.component.html#L2)
 
 # Publisher / subscriber pattern Model
 - Pub/sub model
