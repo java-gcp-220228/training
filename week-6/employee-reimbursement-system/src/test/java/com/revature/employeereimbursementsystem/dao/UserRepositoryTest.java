@@ -8,6 +8,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.annotation.DirtiesContext;
+import org.springframework.test.context.ActiveProfiles;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.persistence.EntityManager;
@@ -18,6 +19,7 @@ import javax.persistence.EntityManager;
 // Before each test method runs, it will delete the ApplicationContext and start up a fresh one
 // This can helpful if we want to have a fresh database for each test, because each time this happens, a
 // new H2 database is also spun up
+@ActiveProfiles("test")
 public class UserRepositoryTest {
 
     @Autowired
@@ -51,21 +53,22 @@ public class UserRepositoryTest {
 
         // Act
         User actual = userRepo.findByUsernameAndPassword("bach_tran", "pass12345");
-//
-//        // Assert
-//        UserRole expectedUserRole = new UserRole();
-//        expectedUserRole.setId(2);
-//        expectedUserRole.setRole("finance_manager");
-//
-//        User expected = new User();
-//        expected.setUsername("bach_tran");
-//        expected.setPassword("pass12345");
-//        expected.setFirstName("Bach");
-//        expected.setLastName("Tran");
-//        expected.setEmail("bach_tran@email.com");
-//        expected.setRole(expectedUserRole);
-//
-//        Assertions.assertEquals(expected, actual);
+
+        // Assert
+        UserRole expectedUserRole = new UserRole();
+        expectedUserRole.setId(2);
+        expectedUserRole.setRole("finance_manager");
+
+        User expected = new User();
+        expected.setId(1);
+        expected.setUsername("bach_tran");
+        expected.setPassword("pass12345");
+        expected.setFirstName("Bach");
+        expected.setLastName("Tran");
+        expected.setEmail("bach_tran@email.com");
+        expected.setRole(expectedUserRole);
+
+        Assertions.assertEquals(expected, actual);
     }
 
 }

@@ -11,7 +11,7 @@ import java.util.Objects;
 public class UserRole {
 
     @Id
-    @GeneratedValue(strategy=GenerationType.AUTO)
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     @Column(name="user_id")
     private int id;
 

@@ -12,7 +12,7 @@ import java.util.Objects;
 public class ReimbursementType {
 
     @Id
-    @GeneratedValue(strategy=GenerationType.AUTO)
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     @Column(name="reimb_type_id")
     private int id;
 
