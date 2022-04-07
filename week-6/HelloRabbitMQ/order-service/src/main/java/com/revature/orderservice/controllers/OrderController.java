@@ -56,6 +56,9 @@ public class OrderController {
         }catch (JsonProcessingException e){
             e.printStackTrace();
             return null;
+        }catch(Exception ex){
+            ex.printStackTrace();
+            return null;
         }
     }
 }

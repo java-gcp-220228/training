@@ -14,14 +14,15 @@ import javax.persistence.*;
 public class Candy {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "candy_id")
     private int id;
 
-    @Column
+    @Column(name = "candy_name")
     private String name;
 
-    @Column
+    @Column(name = "candy_description")
     private String description;
 
-    @Column
+    @Column(name = "candy_price")
     private double price;
 }

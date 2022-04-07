@@ -31,7 +31,7 @@ public class Order {
     @Column(name = "order_total_price")
     private double totalPrice;
 
-    @ManyToOne(cascade = CascadeType.PERSIST)
-    @JoinColumn(name = "order_item", nullable = false)
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "candy_id", nullable = false)
     private Candy candy;
 }
