@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { UserInfo } from 'src/app/models/user-info';
+import { User } from 'src/app/models/user-model';
+import { LoginService } from 'src/app/services/login.service';
 
 @Component({
   selector: 'app-home',
@@ -8,14 +12,19 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
   username: any;
 
-  constructor() { 
-    const userInfo = sessionStorage.getItem("user_info");
-    const user = JSON.parse(userInfo);
-    this.username = user.username;
-    console.log(user);
+  constructor(private loginService: LoginService, private router: Router) {
   }
 
   ngOnInit(): void {
+    this.loginService.getUserInfoFromJwt().subscribe((res) => {
+      const userInfo: UserInfo = res.body;
+
+      this.username = userInfo.username;
+    }, err => {
+      if (err.status === 401) {
+        this.router.navigate(['/login']);
+      }
+    });
   }
 
 }

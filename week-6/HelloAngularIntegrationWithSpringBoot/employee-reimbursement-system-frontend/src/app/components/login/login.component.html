@@ -11,4 +11,7 @@
         </div>
         <button type="submit" class="btn btn-primary login-btn" (click)="loginUser()">Log In</button>
     </form>
+
+    <!-- *ngIf <- errorMessage is truthy if we have a string that has characters, falsy if not -->
+    <p *ngIf="errorMessage" style="color: red;">{{ errorMessage }}</p>
 </div>

@@ -1,9 +1,11 @@
-export class User{
+import { Role } from "./role-model";
+
+export interface User{
+    id: number;
     username: string;
     password: string;
-
-    constructor(username: string, password: string){
-        this.username = username;
-        this.password = password;
-    }
+    firstName: string;
+    lastName: string;
+    email: string;
+    role: Role;
 }

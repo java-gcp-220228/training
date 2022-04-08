@@ -7,10 +7,12 @@ import com.revature.employeereimbursementsystem.model.User;
 import com.revature.employeereimbursementsystem.model.UserJwtDto;
 import com.revature.employeereimbursementsystem.service.AuthenticationService;
 import com.revature.employeereimbursementsystem.service.JwtService;
+import io.jsonwebtoken.MalformedJwtException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.client.RestTemplate;
 
 import javax.security.auth.login.FailedLoginException;
 
@@ -52,17 +54,16 @@ public class AuthenticationController {
     }
 
     @GetMapping("/test")
-    public ResponseEntity<String> test(@RequestHeader("Authorization") String headerValue) {
+    public ResponseEntity<?> test(@RequestHeader("Authorization") String headerValue) throws JsonProcessingException {
         // Bearer <token>
         String jwt = headerValue.split(" ")[1];
 
-        UserJwtDto dto = null;
         try {
-            dto = jwtService.parseJwt(jwt);
+            UserJwtDto dto = jwtService.parseJwt(jwt);
 
-            return ResponseEntity.ok(dto.toString());
-        } catch (JsonProcessingException e) {
-            return ResponseEntity.status(500).body(e.getMessage());
+            return ResponseEntity.ok(dto);
+        } catch (MalformedJwtException e) {
+            return ResponseEntity.status(401).body(e.getMessage());
         }
 
     }

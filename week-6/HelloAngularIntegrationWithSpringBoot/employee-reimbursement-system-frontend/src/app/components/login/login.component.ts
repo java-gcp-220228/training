@@ -9,6 +9,8 @@ import { LoginService } from 'src/app/services/login.service';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
+
+  errorMessage: string;
   //fields/properties
   loginForm: FormGroup;
 
@@ -18,6 +20,13 @@ export class LoginComponent implements OnInit {
     this.loginForm = this.fb.group({
       username: new FormControl('', Validators.required),
       password: new FormControl('', Validators.required),
+    });
+
+    // Have LoginComponent subscribe to the loginErrorSubject that exists inside of the loginService object
+    // Whenever something publishes to the loginErrorSubject, any subscriber will receive that information (callback function
+    // will be invoked)
+    this.loginService.loginErrorSubject.subscribe((errMsg) => {
+      this.errorMessage = errMsg;
     });
   }
 
