@@ -1,0 +1,14 @@
+<div class="container-fluid">
+    <form class="login-form" [formGroup]="loginForm">
+        <h1 class="title form-title">Please log in</h1>
+        <div class="mb-3">
+            <label for="username" class="form-label">Username</label>
+            <input type="text" class="form-control" id="username" formControlName="username">
+        </div>
+        <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="text" class="form-control" id="password" formControlName="password">
+        </div>
+        <button type="submit" class="btn btn-primary login-btn" (click)="loginUser()">Log In</button>
+    </form>
+</div>
