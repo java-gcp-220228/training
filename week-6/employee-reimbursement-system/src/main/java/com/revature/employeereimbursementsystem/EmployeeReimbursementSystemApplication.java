@@ -31,12 +31,12 @@ public class EmployeeReimbursementSystemApplication {
 		SpringApplication.run(EmployeeReimbursementSystemApplication.class, args);
 	}
 
-	@Bean
-	@Profile("default")
-	public CommandLineRunner test() {
-		return s -> {
-			util.populateInitialData();
-		};
-	}
+//	@Bean
+//	@Profile("default")
+//	public CommandLineRunner test() {
+//		return s -> {
+//			util.populateInitialData();
+//		};
+//	}
 
 }

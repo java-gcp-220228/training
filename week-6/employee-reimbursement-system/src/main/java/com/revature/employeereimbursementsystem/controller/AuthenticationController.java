@@ -33,7 +33,7 @@ public class AuthenticationController {
     private JwtService jwtService;
 
     @PostMapping("/login")
-    public ResponseEntity<?> login(@RequestBody LoginDTO dto) {
+    public ResponseEntity<?> login(@RequestBody LoginDTO dto) throws JsonProcessingException {
         try {
             User user = authService.login(dto.getUsername(), dto.getPassword());
 
@@ -48,8 +48,6 @@ public class AuthenticationController {
             return ResponseEntity.status(401).body(e.getMessage());
         } catch (BadParameterException e) {
             return ResponseEntity.status(400).body(e.getMessage());
-        } catch (JsonProcessingException e) {
-            return ResponseEntity.status(500).body(e.getMessage());
         }
     }
 
