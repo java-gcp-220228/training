@@ -283,3 +283,28 @@
     - Pointcut Expression: what allows for you to match advice with join points
         - `@Before(value = "execution(* com.revature.HelloSpringBoot.*.*.*(..))")`
     - Join Point: the actual method in the application that is being "intercepted" by a particular advice
+
+## Spring Test
+* What does Spring Test provide in terms of helpfulness for developers when it comes to testing?
+    - Provides a "test bench" with all of the Spring bean configurations and wiring (dependency injection)
+        - Provides an ApplicationContext for testing purposes
+            - ApplicationContext: modern IoC container for Spring applications
+    - Because all of the beans are wired together, this allows us to easily perform integration testing
+    - In Spring Boot, we use the `@SpringBootTest` annotation at the top of the test class, which basically sets up this integration of different Spring beans
+* What is an H2 database? Why do we use an H2 database for testing purposes?
+    - An H2 database is an in-memory database that only exists whenever we run our tests
+    - This means that we can test out the DAO layer and actually have it interact with a real SQL database
+    - This database is temporary and therefore we don't interfere with our actual production database (PostgreSQL)
+    - In a Spring application, we can provide configuration such that the H2 database is used instead of the production database
+* What is the difference between unit and integration tests?
+    - Unit test: testing a particular method / segments in that method in isolation from any dependencies
+        - Therefore, we use Mockito so that we don't actually end up depending on the dependencies
+        - We only want to test the logic purely within that method itself
+    - Integration test: testing modules that are connected/integrated together
+        - We want to see if the modules actually work together properly or not
+* Spring Test provides MockMvc. What is MockMvc?
+    - Provides functionality to mock http requests
+    - We "send" http requests to our WebApplicationContext (sub-segment of the ApplicationContext) which will then delegate those requests to the appropriate endpoint mapping in the controllers
+    - We can perform unit testing on our controller as well as integration testing
+        - Unit testing: mock the service layer and then send mock http requests to the controller
+        - Integration testing: no mocking, just test the actual endpoints with wiring to the service layer -> dao layer -> H2 database
