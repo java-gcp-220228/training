@@ -308,3 +308,46 @@
     - We can perform unit testing on our controller as well as integration testing
         - Unit testing: mock the service layer and then send mock http requests to the controller
         - Integration testing: no mocking, just test the actual endpoints with wiring to the service layer -> dao layer -> H2 database
+
+## Microservices
+* What are microservices?
+    - Microservices are an architectural approach whereby services are broken up into small independent applications that communicate through APIs
+    - Each microservice handles a particular domain or feature
+    - ex. Authentication microservice, Users microservice
+    - Commonly, HTTP is used for services to communicate with each other
+    - Messaging queues are another approach in which microservices can communicate
+* What are some of their advantages of microservices v. monolithic applications?
+    - Due to the independent nature of each microservice, they can be independently updated
+    - For large applications, the codebase is more easily managed because it is broken up into more maintainable units
+    - It is easier to scale microservices independently
+        - Imagine you have a monolithic application
+            - It's working a period of time without degraded performance, but the user base is growing
+            - At a certain point, the amount of traffic is too large and performance is low for users
+            - You can deploy multiple compute engine instances each running a separate copy of the monolith and use a load balancer to distribute load between them
+            - Imagine that only one part of the application is heavily used (social media application ex. Post related features)
+                - With a monolith, even if only one part of the application is the bottleneck, you still have to scale the entire thing
+                - Poor utilization of space, RAM, resources
+                - However, if we broke this application into microservices, then we could scale the Post microservice independently from the others (since the Post feature is the most commonly used)
+* What is Eureka?
+    - Eureka is a client-side service discovery implementation originally created by Netflix
+        - Eureka is part of the Spring cloud project
+    - It allows services to find and communicate with each other without needing to manually hardcode the hostname and port
+    - The Eureka registry is the only central location that services need to register with
+* What is an API gateway?
+    - A central location through which client requests are routed to the appropriate microservice
+    - The gateway will talk with the service discovery registry (Eureka) in order to route to a microservice
+* What is RestTemplate?
+    - It is a way provided by Spring for a Java application to send HTTP requests
+    - Commonly used for synchronous communication with other microservices
+
+## Messaging Queues
+* What are some messaging queue vendors?
+    - Apache Kafka
+    - RabbitMQ
+    - MuleSoft Anypoint platform
+* What is a messaging queue?
+    - A messaging queue is a way for services to communicate with each other asynchronously
+    - Utilizes the pub/sub (publisher subscriber) design pattern
+    - One service will publish a message to the queue (publisher)
+    - Another service will consume the message from the queue (subscriber)
+    - Allow for us to implement a more **reactive** paradigm for our applications
