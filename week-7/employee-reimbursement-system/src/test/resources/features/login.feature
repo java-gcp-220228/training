@@ -1,5 +1,7 @@
 Feature: Login
 
+  # Each scenario is a single test case
+  # But each step corresponds to a step definition method (in our glue code file)
   Scenario: Successful login as finance manager
     Given There are users in the database
     When I send a POST request to /login with valid username "bach_tran" and valid password "password12345"
